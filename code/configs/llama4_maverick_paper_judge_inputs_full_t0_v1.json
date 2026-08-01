@@ -1,0 +1,24 @@
+{
+  "study_id": "cellpress-medical-reasoning-modern-llm",
+  "protocol_version": "paper-production-v1-judge-inputs",
+  "analysis_status": "paper_production",
+  "condition": "information_ablation_judge_inputs_v1",
+  "description": "Full-dataset choices-to-question and question-without-choices generations for Llama 4 Maverick; no judge calls are included.",
+  "n_shots": 5,
+  "system_prompt": "As a healthcare professional, provide an expert response to each question. Exactly one answer option is the most correct.",
+  "selection_seed": 20260718,
+  "max_requests": 5546,
+  "max_cost_usd": 12.0,
+  "max_workers": 4,
+  "progress_every": 200,
+  "baseline_run_dir": "runs/paper_llama4_maverick_main_k1_t0_v1",
+  "providers": {"openrouter": {"protocol": "openai_chat", "base_url": "https://openrouter.ai/api/v1", "api_key_env": "OPENROUTER_API_KEY", "auth_style": "bearer", "timeout_seconds": 180, "max_retries": 4, "extra_headers": {"X-Title": "CellPress medical reasoning paper production"}}},
+  "models": [{"label": "Llama 4 Maverick 17B-active t0 (OpenRouter)", "provider": "openrouter", "model": "meta-llama/llama-4-maverick", "temperature": 0.0, "input_price_per_million": 0.15, "output_price_per_million": 0.6}],
+  "variant_max_tokens": {"choices_to_question": 512, "generative_no_choices": 2048},
+  "datasets": [
+    {"name": "MedQA-USMLE", "path": "data/MedQA-USMLE/test.jsonl", "shots_path": "repo://medical_reasoning/assets/medqa_usmle_5shot.json", "shot_selection": "head", "extension_sample_size": 1273},
+    {"name": "MedMCQA", "path": "data/MedMCQA/validation.jsonl", "shots_path": "data/MedMCQA/train.jsonl", "shot_filter_percentiles": [50, 90], "shot_selection": "per_example", "sample_size": 1000, "selection_method": "legacy_numpy", "selection_seed": 0, "extension_sample_size": 1000},
+    {"name": "PubMedQA", "path": "data/PubMedQA/test.json", "shots_path": "data/PubMedQA/train.json", "shot_filter_percentiles": [50, 90], "shot_selection": "per_example", "extension_sample_size": 500}
+  ],
+  "variants": ["choices_to_question", "generative_no_choices"]
+}

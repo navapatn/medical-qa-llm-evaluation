@@ -1,0 +1,15 @@
+# Setting 3: question reconstruction from answer choices, zero-shot
+# Exact message sequence sent to the provider.
+
+[USER]
+Below are answer choices from a medical multiple-choice item, but the question stem is hidden. Reconstruct one most likely medical question for which these choices are plausible.
+
+Item genre: This was a USMLE-style medical item. It may be a clinical-management or professional-responsibility question. Reconstruct the minimal stem supported by the choices; do not invent unsupported patient details.
+
+Output only the reconstructed question, ending with a question mark.
+
+Choices:
+A. Disclose the error to the patient and put it in the operative report
+B. Tell the attending that he cannot fail to disclose this mistake
+C. Report the physician to the ethics committee
+D. Refuse to dictate the operative report

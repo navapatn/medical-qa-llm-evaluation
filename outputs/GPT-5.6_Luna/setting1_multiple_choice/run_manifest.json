@@ -1,0 +1,139 @@
+{
+  "generated_at": "2026-07-17T06:53:51.236950+00:00",
+  "execute_api": true,
+  "condition": "five_shot_cot_local_extract",
+  "config_sha256": "63d2e930ebb2a50dcfbd89624e15000fad4d929a58e60fd50c27d92c4ed502ab",
+  "sample_counts": [
+    1
+  ],
+  "max_k": 1,
+  "planned_items": 2773,
+  "planned_requests": 2773,
+  "successful_requests": 200,
+  "estimated_cost_usd": 18.8564,
+  "estimated_cost_by_model": [
+    {
+      "model_label": "GPT-5.6 Luna medium t0 (OpenRouter)",
+      "provider": "openrouter",
+      "planned_cost_usd": 18.8564
+    }
+  ],
+  "observed_cost_usd": 0.40440930000000025,
+  "stopped_for_cost": false,
+  "datasets": [
+    {
+      "dataset": "MedQA-USMLE",
+      "path": "<HOME>/Documents/Research/GRAIL-internship/cell-paper-replication/paper-replicator/codex_version/papers/cellpress-medical-reasoning/data/MedQA-USMLE/test.jsonl",
+      "n": 1273,
+      "selected_examples_sha256": "d5341e8d18a83a3efd98873858d80de10a150bfd8a623ac2c9bff7a0f0408d95",
+      "selection_method": "legacy_numpy",
+      "selection_seed": 0,
+      "sample_size": null,
+      "max_examples": null,
+      "max_examples_method": "head",
+      "max_examples_seed": 0,
+      "selected_answer_counts": {
+        "0": 353,
+        "1": 309,
+        "2": 346,
+        "3": 265
+      },
+      "shots_path": "<HOME>/Documents/Research/GRAIL-internship/cell-paper-replication/paper-replicator/codex_version/medical_reasoning/assets/medqa_usmle_5shot.json",
+      "shot_pool_n": 5,
+      "shot_filter": null
+    },
+    {
+      "dataset": "MedMCQA",
+      "path": "<HOME>/Documents/Research/GRAIL-internship/cell-paper-replication/paper-replicator/codex_version/papers/cellpress-medical-reasoning/data/MedMCQA/validation.jsonl",
+      "n": 1000,
+      "selected_examples_sha256": "3b7fe9918699ff18c26f0dbe993a5e4d3784209eb9139a19097d0099d342ca75",
+      "selection_method": "legacy_numpy",
+      "selection_seed": 0,
+      "sample_size": 1000,
+      "max_examples": null,
+      "max_examples_method": "head",
+      "max_examples_seed": 0,
+      "selected_answer_counts": {
+        "0": 334,
+        "1": 260,
+        "2": 214,
+        "3": 192
+      },
+      "shots_path": "<HOME>/Documents/Research/GRAIL-internship/cell-paper-replication/paper-replicator/codex_version/papers/cellpress-medical-reasoning/data/MedMCQA/train.jsonl",
+      "shot_pool_n": 74501,
+      "shot_filter": {
+        "percentiles": [
+          50.0,
+          90.0
+        ],
+        "word_length_bounds": [
+          44,
+          154
+        ],
+        "before": 182822,
+        "after": 74501
+      }
+    },
+    {
+      "dataset": "PubMedQA",
+      "path": "<HOME>/Documents/Research/GRAIL-internship/cell-paper-replication/paper-replicator/codex_version/papers/cellpress-medical-reasoning/data/PubMedQA/test.json",
+      "n": 500,
+      "selected_examples_sha256": "bf1b5b0bd68239d4862ea0a8d4d80bdfc49ceeb2c0eadaf80c21e307eb64496f",
+      "selection_method": "legacy_numpy",
+      "selection_seed": 0,
+      "sample_size": null,
+      "max_examples": null,
+      "max_examples_method": "head",
+      "max_examples_seed": 0,
+      "selected_answer_counts": {
+        "0": 276,
+        "1": 169,
+        "2": 55
+      },
+      "shots_path": "<HOME>/Documents/Research/GRAIL-internship/cell-paper-replication/paper-replicator/codex_version/papers/cellpress-medical-reasoning/data/PubMedQA/train.json",
+      "shot_pool_n": 185,
+      "shot_filter": {
+        "percentiles": [
+          50.0,
+          90.0
+        ],
+        "word_length_bounds": [
+          38,
+          61
+        ],
+        "before": 450,
+        "after": 185
+      }
+    }
+  ],
+  "models": [
+    {
+      "label": "GPT-5.6 Luna medium t0 (OpenRouter)",
+      "provider": "openrouter",
+      "model": "openai/gpt-5.6-luna",
+      "temperature": 0.0,
+      "max_tokens": 4096
+    }
+  ],
+  "providers": {
+    "openrouter": {
+      "name": "openrouter",
+      "protocol": "openai_chat",
+      "base_url": "https://openrouter.ai/api/v1",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "api_key_set": true,
+      "auth_style": "bearer",
+      "endpoint_path": "chat/completions"
+    }
+  },
+  "outputs": {
+    "planned_items": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/planned_items.jsonl",
+    "predictions": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/predictions.jsonl",
+    "metrics": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/metrics.json",
+    "summary": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/summary.md",
+    "config_snapshot": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/config.snapshot.json",
+    "frozen_run_inputs": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/frozen_run_inputs.json",
+    "cost_checkpoints_jsonl": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/cost_checkpoints.jsonl",
+    "cost_checkpoints_csv": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/cost_checkpoints.csv"
+  }
+}

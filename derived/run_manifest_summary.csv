@@ -1,0 +1,11 @@
+model,api_identifier,temperature,run_date,run_directory
+GPT-5.6 Luna,openai/gpt-5.6-luna,0.0,2026-07-17,paper_gpt56_luna_main_k1_medium_t0_v3
+GPT-OSS 20B,openai/gpt-oss-20b,0.0,2026-07-17,paper_gpt_oss20_main_k1_medium_t0_v1
+DeepSeek V4 Flash,deepseek/deepseek-v4-flash,0.0,2026-07-17,paper_deepseek_v4_flash_main_k1_high_t0_v1
+Qwen 3.5 9B,qwen/qwen3.5-9b,0.0,2026-07-17,paper_qwen35_9b_main_k1_native_reasoning_t0_v5
+Llama 3.1 8B,meta-llama/llama-3.1-8b-instruct,0.0,,paper_llama31_8b_main_k1_t0_v1
+Llama 4 Maverick,meta-llama/llama-4-maverick,0.0,2026-07-18,paper_llama4_maverick_main_k1_t0_v1
+Ministral 8B,mistralai/ministral-8b-2512,0.0,2026-07-18,paper_ministral3_8b_main_k1_t0_v1
+Mistral Large 3,mistralai/mistral-large-2512,0.0,2026-07-18,paper_mistral_large3_main_k1_t0_v1
+DeepSeek V4 Pro,deepseek/deepseek-v4-pro,0.5,2026-07-15,openrouter_deepseek_v4_pro_qwen37_full_k1
+Qwen 3.7 Plus,qwen/qwen3.7-plus,0.5,2026-07-15,openrouter_deepseek_v4_pro_qwen37_full_k1

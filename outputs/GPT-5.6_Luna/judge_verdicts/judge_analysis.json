@@ -1,0 +1,147 @@
+{
+  "schema_version": "cellpress.judge_analysis.v1",
+  "generated_at": "2026-07-21T00:41:43.957783+00:00",
+  "source_model": "openai/gpt-5.6-luna",
+  "judge_model": {
+    "label": "Claude Sonnet 5 short-reasoning boolean judge (OpenRouter)",
+    "provider": "openrouter",
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0,
+    "max_tokens": 1024,
+    "input_price_per_million": 2.0,
+    "output_price_per_million": 10.0,
+    "extra_body": {
+      "reasoning": {
+        "effort": "low"
+      }
+    }
+  },
+  "planned_calls": 5046,
+  "completed_calls": 5046,
+  "parsed_calls": 5032,
+  "parse_error_calls": 14,
+  "raw_rows": 5046,
+  "duplicate_or_retry_rows": 0,
+  "api_error_rows": 0,
+  "truncated_rows": 0,
+  "response_models": [
+    "anthropic/claude-sonnet-5"
+  ],
+  "total_cost_usd": 7.054877999999984,
+  "canonical_cost_usd": 7.054877999999984,
+  "task_metrics": {
+    "free_answer_semantic_correctness": {
+      "task": "free_answer_semantic_correctness",
+      "n": 2773,
+      "parsed_n": 2766,
+      "parse_coverage": 0.997475658131987,
+      "correct_count": 1927,
+      "semantic_accuracy": 0.6949152542372882,
+      "semantic_accuracy_ci95": [
+        0.6775177722783047,
+        0.7117734479914667
+      ]
+    },
+    "question_reconstruction_fidelity": {
+      "task": "question_reconstruction_fidelity",
+      "n": 2273,
+      "parsed_n": 2266,
+      "parse_coverage": 0.9969203695556533,
+      "target_match_count": 579,
+      "target_match_rate": 0.2547294324681038,
+      "target_match_ci95": [
+        0.23724154852711601,
+        0.27304495136053003
+      ],
+      "mean_fidelity": null,
+      "fidelity_distribution": {}
+    }
+  },
+  "dataset_metrics": [
+    {
+      "dataset": "MedMCQA",
+      "task": "free_answer_semantic_correctness",
+      "n": 1000,
+      "parsed_n": 999,
+      "parse_coverage": 0.999,
+      "correct_count": 520,
+      "semantic_accuracy": 0.52,
+      "semantic_accuracy_ci95": [
+        0.4890177246575191,
+        0.5508292050030589
+      ],
+      "cost_usd": 0.9787520000000002
+    },
+    {
+      "dataset": "MedMCQA",
+      "task": "question_reconstruction_fidelity",
+      "n": 1000,
+      "parsed_n": 999,
+      "parse_coverage": 0.999,
+      "target_match_count": 210,
+      "target_match_rate": 0.21,
+      "target_match_ci95": [
+        0.18588891937362567,
+        0.23633060054799632
+      ],
+      "mean_fidelity": null,
+      "fidelity_distribution": {},
+      "cost_usd": 1.1112639999999994
+    },
+    {
+      "dataset": "MedQA-USMLE",
+      "task": "free_answer_semantic_correctness",
+      "n": 1273,
+      "parsed_n": 1267,
+      "parse_coverage": 0.99528672427337,
+      "correct_count": 969,
+      "semantic_accuracy": 0.7611940298507462,
+      "semantic_accuracy_ci95": [
+        0.737009338552683,
+        0.7838070834126578
+      ],
+      "cost_usd": 1.8777039999999985
+    },
+    {
+      "dataset": "MedQA-USMLE",
+      "task": "question_reconstruction_fidelity",
+      "n": 1273,
+      "parsed_n": 1267,
+      "parse_coverage": 0.99528672427337,
+      "target_match_count": 369,
+      "target_match_rate": 0.2898664571877455,
+      "target_match_ci95": [
+        0.26560500074809357,
+        0.3153923139113691
+      ],
+      "mean_fidelity": null,
+      "fidelity_distribution": {},
+      "cost_usd": 2.1028000000000016
+    },
+    {
+      "dataset": "PubMedQA",
+      "task": "free_answer_semantic_correctness",
+      "n": 500,
+      "parsed_n": 500,
+      "parse_coverage": 1.0,
+      "correct_count": 438,
+      "semantic_accuracy": 0.876,
+      "semantic_accuracy_ci95": [
+        0.8442125871122163,
+        0.9020539088606966
+      ],
+      "cost_usd": 0.9843579999999998
+    }
+  ],
+  "source_prediction_files": [
+    {
+      "path": "papers/cellpress-medical-reasoning/runs/paper_claude_sonnet5_judge_gpt56_luna_short_reason_templateB_v1/predictions.jsonl",
+      "sha256": "7e4d25121795c2c5e63b1d58cf8a13a2991ac7937aca4a5b709edc39037111e8"
+    }
+  ],
+  "artifacts": {
+    "canonical_judgments": "papers/cellpress-medical-reasoning/runs/paper_claude_sonnet5_judge_gpt56_luna_short_reason_templateB_v1/canonical_judgments.jsonl",
+    "judge_metrics_csv": "papers/cellpress-medical-reasoning/runs/paper_claude_sonnet5_judge_gpt56_luna_short_reason_templateB_v1/judge_metrics.csv",
+    "combined_cost_checkpoints_csv": "papers/cellpress-medical-reasoning/runs/paper_claude_sonnet5_judge_gpt56_luna_short_reason_templateB_v1/combined_cost_checkpoints.csv"
+  }
+}

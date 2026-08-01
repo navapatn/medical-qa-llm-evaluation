@@ -1,0 +1,10 @@
+# Setting 2: generative (answer choices withheld), zero-shot
+# Exact message sequence sent to the provider.
+
+[SYSTEM]
+As a healthcare professional, provide an expert response to each question. Exactly one answer option is the most correct.
+
+[USER]
+Answer the following medical question without seeing answer choices. Give a concise answer and end with exactly `Answer: <answer phrase>`.
+
+Question: A junior orthopaedic surgery resident is completing a carpal tunnel repair with the department chairman as the attending physician. During the case, the resident inadvertently cuts a flexor tendon. The tendon is repaired without complication. The attending tells the resident that the patient will do fine, and there is no need to report this minor complication that will not harm the patient, as he does not want to make the patient worry unnecessarily. He tells the resident to leave this complication out of the operative report. Which of the following is the correct next action for the resident to take?

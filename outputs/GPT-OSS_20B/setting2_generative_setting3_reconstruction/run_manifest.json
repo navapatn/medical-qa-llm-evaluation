@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-07-19T08:54:31.115770+00:00",
+  "condition": "information_ablation_extensions_v1",
+  "config_sha256": "a252b9bdadd7009821e34e3735854a4a9da95264a8ec4ab9080a33f2538b4720",
+  "model": {
+    "label": "GPT-OSS 20B medium t0 (OpenRouter)",
+    "provider": "openrouter",
+    "model": "openai/gpt-oss-20b",
+    "temperature": 0.0
+  },
+  "selected_questions": 2773,
+  "baseline_available": true,
+  "planned_requests": 5046,
+  "completed_requests": 1200,
+  "observed_cost_usd": 0.4102943250000002,
+  "raw_api_charges_usd": 0.5109688689999999,
+  "duplicate_audit_rows": 164,
+  "max_cost_usd": 8.0,
+  "stopped_for_cost": false,
+  "variant_counts": {
+    "choices_to_question": 2273,
+    "generative_no_choices": 2773
+  },
+  "dataset_counts": {
+    "MedMCQA": 1000,
+    "MedQA-USMLE": 1273,
+    "PubMedQA": 500
+  },
+  "outputs": {
+    "planned_items": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_datasetaware_extensions_full_medium_t0_v1/planned_items.jsonl",
+    "predictions": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_datasetaware_extensions_full_medium_t0_v1/predictions.jsonl",
+    "baseline_predictions": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_datasetaware_extensions_full_medium_t0_v1/baseline_predictions.jsonl",
+    "metrics": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_datasetaware_extensions_full_medium_t0_v1/metrics.json",
+    "summary": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_datasetaware_extensions_full_medium_t0_v1/summary.md",
+    "config_snapshot": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_datasetaware_extensions_full_medium_t0_v1/config.snapshot.json",
+    "frozen_run_inputs": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_datasetaware_extensions_full_medium_t0_v1/frozen_run_inputs.json",
+    "cost_checkpoints_jsonl": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_datasetaware_extensions_full_medium_t0_v1/cost_checkpoints.jsonl",
+    "cost_checkpoints_csv": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_datasetaware_extensions_full_medium_t0_v1/cost_checkpoints.csv"
+  }
+}

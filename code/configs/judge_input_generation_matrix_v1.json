@@ -1,0 +1,17 @@
+{
+  "schema_version": "cellpress.judge_input_generation_matrix.v1",
+  "description": "Frozen sources for generating, but not judging, the two LLM-as-a-judge input conditions across all ten evaluated models.",
+  "variants": ["choices_to_question", "generative_no_choices"],
+  "models": [
+    {"label": "GPT-5.6 Luna", "reuse_completed_generation_run": "runs/paper_gpt56_luna_extensions_full_v1", "temperature": 0.5},
+    {"label": "GPT-OSS 20B", "config": "medical_qa_configs/gpt_oss20_paper_extensions_full_medium_t0_v1.json", "run_dir": "runs/paper_gpt_oss20_judge_inputs_full_medium_t0_v2"},
+    {"label": "DeepSeek V4 Pro", "config": "medical_qa_configs/deepseek_v4_pro_paper_judge_inputs_full_t0_v2.json", "run_dir": "runs/paper_deepseek_v4_pro_judge_inputs_full_t0_v2"},
+    {"label": "DeepSeek V4 Flash", "config": "medical_qa_configs/deepseek_v4_flash_paper_extensions_full_high_t0_v1.json", "run_dir": "runs/paper_deepseek_v4_flash_judge_inputs_full_high_t0_v2"},
+    {"label": "Qwen 3.7 Plus", "config": "medical_qa_configs/qwen37_plus_paper_judge_inputs_full_t0_v2.json", "run_dir": "runs/paper_qwen37_plus_judge_inputs_full_t0_v2"},
+    {"label": "Qwen 3.5 9B", "config": "medical_qa_configs/qwen35_9b_paper_extensions_full_native_reasoning_t0_v5.json", "run_dir": "runs/paper_qwen35_9b_judge_inputs_full_native_reasoning_t0_v2"},
+    {"label": "Llama 4 Maverick", "config": "medical_qa_configs/llama4_maverick_paper_judge_inputs_full_t0_v1.json", "run_dir": "runs/paper_llama4_maverick_judge_inputs_full_t0_v2"},
+    {"label": "Llama 3.1 8B", "config": "medical_qa_configs/llama31_8b_paper_judge_inputs_full_t0_v1.json", "run_dir": "runs/paper_llama31_8b_judge_inputs_full_t0_v2"},
+    {"label": "Mistral Large 3", "config": "medical_qa_configs/mistral_large3_paper_judge_inputs_full_t0_v1.json", "run_dir": "runs/paper_mistral_large3_judge_inputs_full_t0_v2"},
+    {"label": "Ministral 3 8B", "config": "medical_qa_configs/ministral3_8b_paper_judge_inputs_full_t0_v1.json", "run_dir": "runs/paper_ministral3_8b_judge_inputs_full_t0_v2"}
+  ]
+}

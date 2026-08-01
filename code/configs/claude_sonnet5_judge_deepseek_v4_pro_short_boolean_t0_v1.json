@@ -1,0 +1,45 @@
+{
+  "study_id": "cellpress-medical-reasoning-modern-llm",
+  "protocol_version": "paper-production-judge-short-boolean-v1",
+  "analysis_status": "paper_production",
+  "condition": "llm_as_judge_extensions",
+  "description": "Claude Sonnet 5 judges DeepSeek V4 Pro extension outputs using frozen compact Boolean-only JSON prompts; no judge reasoning or rationale is requested.",
+  "source_model": "deepseek/deepseek-v4-pro",
+  "judge_items_path": "runs/paper_deepseek_v4_pro_datasetaware_extensions_full_t0_v1/judge_items.jsonl",
+  "judge_items_sha256": "f8c8cdcf62d55b552565ac862a793585e1207732ae3dbe1ac7236ad2e96bcb1e",
+  "expected_judge_items": 5046,
+  "max_requests": 5046,
+  "max_cost_usd": 10.0,
+  "max_workers": 8,
+  "progress_every": 200,
+  "providers": {
+    "openrouter": {
+      "protocol": "openai_chat",
+      "base_url": "https://openrouter.ai/api/v1",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "auth_style": "bearer",
+      "timeout_seconds": 180,
+      "max_retries": 4,
+      "extra_headers": {
+        "X-Title": "CellPress medical reasoning LLM judge"
+      }
+    }
+  },
+  "models": [
+    {
+      "label": "Claude Sonnet 5 short-Boolean judge (OpenRouter)",
+      "provider": "openrouter",
+      "model": "anthropic/claude-sonnet-5",
+      "temperature": 0.0,
+      "max_tokens": 16,
+      "input_price_per_million": 2.0,
+      "output_price_per_million": 10.0,
+      "extra_body": {
+        "reasoning": {
+          "effort": "none",
+          "exclude": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+dataset,task,n,parsed_n,parse_coverage,target_match_rate,mean_fidelity,mapping_accuracy,semantic_accuracy,substantive_option_rate,none_rate,ambiguous_rate,cost_usd
+MedMCQA,free_answer_semantic_correctness,1000,999,0.999,,,,0.345,,,,0.9585619999999998
+MedMCQA,question_reconstruction_fidelity,1000,999,0.999,0.119,,,,,,,1.1297519999999996
+MedQA-USMLE,free_answer_semantic_correctness,1273,1267,0.99528672427337,,,,0.617439120188531,,,,1.8607639999999999
+MedQA-USMLE,question_reconstruction_fidelity,1273,1268,0.9960722702278083,0.18224666142969365,,,,,,,2.126574
+PubMedQA,free_answer_semantic_correctness,500,500,1.0,,,,0.854,,,,0.9594599999999998

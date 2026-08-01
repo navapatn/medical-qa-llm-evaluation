@@ -1,0 +1,4 @@
+model_label,provider,dataset,k,n,accuracy,coverage,mean_vote_entropy,mean_unique_answers
+Ministral 3 8B 2512 t0 (OpenRouter),openrouter,MedMCQA,1,1000,,,,
+Ministral 3 8B 2512 t0 (OpenRouter),openrouter,MedQA-USMLE,1,1273,0.014139827179890024,0.018853102906520033,0.0,0.018853102906520033
+Ministral 3 8B 2512 t0 (OpenRouter),openrouter,PubMedQA,1,500,,,,

@@ -1,0 +1,45 @@
+{
+  "study_id": "cellpress-medical-reasoning-modern-llm",
+  "protocol_version": "paper-production-judge-short-boolean-v1",
+  "analysis_status": "paper_production",
+  "condition": "llm_as_judge_extensions",
+  "description": "Claude Sonnet 5 judges Qwen 3.5 9B extension outputs using frozen compact Boolean-only JSON prompts; no judge reasoning or rationale is requested.",
+  "source_model": "qwen/qwen3.5-9b",
+  "judge_items_path": "runs/paper_qwen35_9b_datasetaware_extensions_full_no_thinking_bounded_t0_v2/judge_items.jsonl",
+  "judge_items_sha256": "be73b75cb736ab00647674acafee44ef86d126ab5c8e41ec8133c4173041ad6e",
+  "expected_judge_items": 5046,
+  "max_requests": 5046,
+  "max_cost_usd": 10.0,
+  "max_workers": 8,
+  "progress_every": 200,
+  "providers": {
+    "openrouter": {
+      "protocol": "openai_chat",
+      "base_url": "https://openrouter.ai/api/v1",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "auth_style": "bearer",
+      "timeout_seconds": 180,
+      "max_retries": 4,
+      "extra_headers": {
+        "X-Title": "CellPress medical reasoning LLM judge"
+      }
+    }
+  },
+  "models": [
+    {
+      "label": "Claude Sonnet 5 short-Boolean judge (OpenRouter)",
+      "provider": "openrouter",
+      "model": "anthropic/claude-sonnet-5",
+      "temperature": 0.0,
+      "max_tokens": 16,
+      "input_price_per_million": 2.0,
+      "output_price_per_million": 10.0,
+      "extra_body": {
+        "reasoning": {
+          "effort": "none",
+          "exclude": true
+        }
+      }
+    }
+  ]
+}

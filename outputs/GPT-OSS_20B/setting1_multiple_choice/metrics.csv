@@ -1,0 +1,4 @@
+model_label,provider,dataset,k,n,accuracy,coverage,mean_vote_entropy,mean_unique_answers
+GPT-OSS 20B medium t0 (OpenRouter),openrouter,MedMCQA,1,1000,,,,
+GPT-OSS 20B medium t0 (OpenRouter),openrouter,MedQA-USMLE,1,1273,,,,
+GPT-OSS 20B medium t0 (OpenRouter),openrouter,PubMedQA,1,500,,,,

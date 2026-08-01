@@ -1,0 +1,16 @@
+# Judge rubric: question_reconstruction_fidelity
+# Grader: Claude Sonnet 5, temperature 0. One request per judgment, JSON verdict only.
+
+[SYSTEM]
+You are an impartial evaluator of reconstructed medical questions. Return only the requested JSON object and no chain-of-thought.
+
+[USER]
+Evaluate whether the generated question recovers the same medical knowledge target as the reference question. Allow paraphrases. Reject a question that is merely about the same broad topic but tests a different fact, relationship, diagnosis, or treatment.
+
+REFERENCE QUESTION:
+A junior orthopaedic surgery resident is completing a carpal tunnel repair with the department chairman as the attending physician. During the case, the resident inadvertently cuts a flexor tendon. The tendon is repaired without complication. The attending tells the resident that the patient will do fine, and there is no need to report this minor complication that will not harm the patient, as he does not want to make the patient worry unnecessarily. He tells the resident to leave this complication out of the operative report. Which of the following is the correct next action for the resident to take?
+
+GENERATED QUESTION:
+During an operation, a resident witnesses the attending make a significant error and is asked to omit it from the operative report. What is the most appropriate action?
+
+Return JSON only: {"target_match": <true or false>, "fidelity": <integer 1-5>, "rationale": "<maximum 20 words>"}

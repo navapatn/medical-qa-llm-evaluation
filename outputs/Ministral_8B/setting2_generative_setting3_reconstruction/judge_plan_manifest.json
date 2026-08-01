@@ -1,0 +1,14 @@
+{
+  "schema_version": "cellpress.judge_plan.v1",
+  "generated_at": "2026-07-18T22:30:55.831227+00:00",
+  "source_model": "mistralai/ministral-8b-2512",
+  "planned_judge_calls": 5046,
+  "task_counts": {
+    "free_answer_semantic_correctness": 2773,
+    "question_reconstruction_fidelity": 2273
+  },
+  "reference_choices_excluded_from_judge_prompts": true,
+  "reference_correct_answer_included_only_for_free_answer_judgment": true,
+  "judge_items_sha256": "bd547801ee58ad9c572d3b1b33f8c455b4c7a6100b690f4ee6e126b031373970",
+  "judge_items": "codex_version/papers/cellpress-medical-reasoning/runs/paper_ministral3_8b_datasetaware_extensions_full_t0_v1/judge_items.jsonl"
+}

@@ -1,0 +1,147 @@
+{
+  "schema_version": "cellpress.judge_analysis.v1",
+  "generated_at": "2026-07-21T03:40:08.589472+00:00",
+  "source_model": "qwen/qwen3.7-plus",
+  "judge_model": {
+    "label": "Claude Sonnet 5 short-reasoning boolean judge (OpenRouter)",
+    "provider": "openrouter",
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0,
+    "max_tokens": 1024,
+    "input_price_per_million": 2.0,
+    "output_price_per_million": 10.0,
+    "extra_body": {
+      "reasoning": {
+        "effort": "low"
+      }
+    }
+  },
+  "planned_calls": 5046,
+  "completed_calls": 5046,
+  "parsed_calls": 5044,
+  "parse_error_calls": 2,
+  "raw_rows": 5046,
+  "duplicate_or_retry_rows": 0,
+  "api_error_rows": 0,
+  "truncated_rows": 0,
+  "response_models": [
+    "anthropic/claude-sonnet-5"
+  ],
+  "total_cost_usd": 6.95878399999999,
+  "canonical_cost_usd": 6.95878399999999,
+  "task_metrics": {
+    "free_answer_semantic_correctness": {
+      "task": "free_answer_semantic_correctness",
+      "n": 2773,
+      "parsed_n": 2772,
+      "parse_coverage": 0.999639379733141,
+      "correct_count": 1799,
+      "semantic_accuracy": 0.6487558600793365,
+      "semantic_accuracy_ci95": [
+        0.6307940000324848,
+        0.666306144946758
+      ]
+    },
+    "question_reconstruction_fidelity": {
+      "task": "question_reconstruction_fidelity",
+      "n": 2273,
+      "parsed_n": 2272,
+      "parse_coverage": 0.9995600527936648,
+      "target_match_count": 600,
+      "target_match_rate": 0.2639683238011439,
+      "target_match_ci95": [
+        0.2462568690650942,
+        0.28247623800167204
+      ],
+      "mean_fidelity": null,
+      "fidelity_distribution": {}
+    }
+  },
+  "dataset_metrics": [
+    {
+      "dataset": "MedMCQA",
+      "task": "free_answer_semantic_correctness",
+      "n": 1000,
+      "parsed_n": 1000,
+      "parse_coverage": 1.0,
+      "correct_count": 485,
+      "semantic_accuracy": 0.485,
+      "semantic_accuracy_ci95": [
+        0.4541408702709699,
+        0.5159739324835967
+      ],
+      "cost_usd": 0.9404420000000001
+    },
+    {
+      "dataset": "MedMCQA",
+      "task": "question_reconstruction_fidelity",
+      "n": 1000,
+      "parsed_n": 1000,
+      "parse_coverage": 1.0,
+      "target_match_count": 215,
+      "target_match_rate": 0.215,
+      "target_match_ci95": [
+        0.19065343629137976,
+        0.2415278160453867
+      ],
+      "mean_fidelity": null,
+      "fidelity_distribution": {},
+      "cost_usd": 1.1075540000000001
+    },
+    {
+      "dataset": "MedQA-USMLE",
+      "task": "free_answer_semantic_correctness",
+      "n": 1273,
+      "parsed_n": 1272,
+      "parse_coverage": 0.9992144540455616,
+      "correct_count": 893,
+      "semantic_accuracy": 0.7014925373134329,
+      "semantic_accuracy_ci95": [
+        0.6757793034447998,
+        0.7259933649284632
+      ],
+      "cost_usd": 1.7974000000000006
+    },
+    {
+      "dataset": "MedQA-USMLE",
+      "task": "question_reconstruction_fidelity",
+      "n": 1273,
+      "parsed_n": 1272,
+      "parse_coverage": 0.9992144540455616,
+      "target_match_count": 385,
+      "target_match_rate": 0.30243519245875883,
+      "target_match_ci95": [
+        0.2778290947103915,
+        0.3282300628105612
+      ],
+      "mean_fidelity": null,
+      "fidelity_distribution": {},
+      "cost_usd": 2.192069999999999
+    },
+    {
+      "dataset": "PubMedQA",
+      "task": "free_answer_semantic_correctness",
+      "n": 500,
+      "parsed_n": 500,
+      "parse_coverage": 1.0,
+      "correct_count": 421,
+      "semantic_accuracy": 0.842,
+      "semantic_accuracy_ci95": [
+        0.8074376489887337,
+        0.8713473021355645
+      ],
+      "cost_usd": 0.9213180000000005
+    }
+  ],
+  "source_prediction_files": [
+    {
+      "path": "papers/cellpress-medical-reasoning/runs/paper_claude_sonnet5_judge_qwen37_plus_short_reason_v1/predictions.jsonl",
+      "sha256": "3c8ffeb39ed468297eb305bed86f2549ba01b0928174b58705dc72bdea26097b"
+    }
+  ],
+  "artifacts": {
+    "canonical_judgments": "papers/cellpress-medical-reasoning/runs/paper_claude_sonnet5_judge_qwen37_plus_short_reason_v1/canonical_judgments.jsonl",
+    "judge_metrics_csv": "papers/cellpress-medical-reasoning/runs/paper_claude_sonnet5_judge_qwen37_plus_short_reason_v1/judge_metrics.csv",
+    "combined_cost_checkpoints_csv": "papers/cellpress-medical-reasoning/runs/paper_claude_sonnet5_judge_qwen37_plus_short_reason_v1/combined_cost_checkpoints.csv"
+  }
+}

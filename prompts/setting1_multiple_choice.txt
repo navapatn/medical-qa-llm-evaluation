@@ -1,0 +1,50 @@
+# Setting 1: multiple-choice baseline (five-shot chain of thought)
+# Exact message sequence sent to the provider. Exemplars 1-5 precede the target question.
+
+[SYSTEM]
+As a healthcare professional, provide an expert response to each question. Exactly one answer option is the most correct.
+
+[USER]
+Question: A 22-year-old male marathon runner presents with right-sided rib pain when he runs long distances. Examination shows normal heart and lung findings and an exhalation dysfunction at ribs 4-5 on the right. Which muscle or muscle group will be most useful in correcting this dysfunction with a direct method?
+Choices: (A) Anterior scalene (B) Latissimus dorsi (C) Pectoralis minor (D) Quadratus lumborum.
+
+[ASSISTANT]
+Explanation: Among the options, the pectoralis minor originates from the outer surfaces of the third through fifth ribs, so it can be used to help correct this rib dysfunction.
+Answer: Therefore, the answer is (C) Pectoralis minor.
+
+[USER]
+Question: A 36-year-old man has 3 weeks of low back pain. Prone examination reveals a deep sacral sulcus on the left, a posterior inferior lateral angle on the right, and a lumbosacral junction that springs freely on compression. Which diagnosis is most likely?
+Choices: (A) Left-on-left sacral torsion (B) Left-on-right sacral torsion (C) Right unilateral sacral flexion (D) Right-on-right sacral torsion.
+
+[ASSISTANT]
+Explanation: A deep sulcus on the left, posterior ILA on the right, and a negative spring test indicate a right-on-right sacral torsion.
+Answer: Therefore, the answer is (D) Right-on-right sacral torsion.
+
+[USER]
+Question: A 44-year-old man has a 3-day history of sore throat, nonproductive cough, runny nose, and frontal headache. He is afebrile, has erythematous nares and posterior pharyngeal lymphoid hyperplasia, no cervical adenopathy, and clear lungs. Which cause is most likely?
+Choices: (A) Allergic rhinitis (B) Epstein-Barr virus (C) Mycoplasma pneumonia (D) Rhinovirus.
+
+[ASSISTANT]
+Explanation: The acute upper-respiratory symptoms, absence of cervical adenopathy, and clear lungs are most consistent with a rhinovirus infection.
+Answer: Therefore, the answer is (D) Rhinovirus.
+
+[USER]
+Question: A previously healthy 32-year-old woman has sadness, poor appetite, and insomnia 8 months after her husband died. She has also developed new repetitive checking and counting rituals. Pharmacotherapy should target which neurotransmitter?
+Choices: (A) Dopamine (B) Glutamate (C) Norepinephrine (D) Serotonin.
+
+[ASSISTANT]
+Explanation: Her depressive symptoms and new obsessive-compulsive symptoms are both treated with serotonergic medications, making serotonin the best target.
+Answer: Therefore, the answer is (D) Serotonin.
+
+[USER]
+Question: A 42-year-old man is preparing for adrenalectomy after a 10-cm adrenal mass, hypertension, and elevated metanephrines were found. His current blood pressure is 170/95 mm Hg. Which treatment should be started first?
+Choices: (A) Labetalol (B) A loading dose of potassium chloride (C) Nifedipine (D) Phenoxybenzamine.
+
+[ASSISTANT]
+Explanation: The adrenal mass, metanephrine elevation, and hypertension indicate pheochromocytoma. Preoperative preparation begins with alpha blockade using phenoxybenzamine before any beta blockade.
+Answer: Therefore, the answer is (D) Phenoxybenzamine.
+
+[USER]
+Question: A junior orthopaedic surgery resident is completing a carpal tunnel repair with the department chairman as the attending physician. During the case, the resident inadvertently cuts a flexor tendon. The tendon is repaired without complication. The attending tells the resident that the patient will do fine, and there is no need to report this minor complication that will not harm the patient, as he does not want to make the patient worry unnecessarily. He tells the resident to leave this complication out of the operative report. Which of the following is the correct next action for the resident to take?
+Choices: (A) Disclose the error to the patient and put it in the operative report (B) Tell the attending that he cannot fail to disclose this mistake (C) Report the physician to the ethics committee (D) Refuse to dictate the operative report.
+Think through the question step by step. End your response with exactly `Answer: (X)`, replacing X with the option letter.

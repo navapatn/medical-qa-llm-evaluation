@@ -1,0 +1,7 @@
+model_label,provider,dataset,k,n,accuracy,coverage,mean_vote_entropy,mean_unique_answers
+DeepSeek V4 Pro (OpenRouter),openrouter,MedMCQA,1,1000,,,,
+DeepSeek V4 Pro (OpenRouter),openrouter,MedQA-USMLE,1,1273,,,,
+DeepSeek V4 Pro (OpenRouter),openrouter,PubMedQA,1,500,,,,
+Qwen 3.7 Plus (OpenRouter),openrouter,MedMCQA,1,1000,,,,
+Qwen 3.7 Plus (OpenRouter),openrouter,MedQA-USMLE,1,1273,,,,
+Qwen 3.7 Plus (OpenRouter),openrouter,PubMedQA,1,500,,,,

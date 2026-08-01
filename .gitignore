@@ -1,0 +1,22 @@
+# credentials -- never commit
+.env
+*.env
+!requirements.txt
+secrets.json
+
+# bulk run artifacts: these live in the archived deposit, not here
+runs/
+api_cache/
+shards/
+retries/
+*predictions.jsonl
+canonical_judgments.jsonl
+judge_items.jsonl
+planned_items.jsonl
+selected_questions.jsonl
+
+# local
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/

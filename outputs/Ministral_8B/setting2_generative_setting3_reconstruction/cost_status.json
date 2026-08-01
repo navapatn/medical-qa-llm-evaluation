@@ -1,0 +1,121 @@
+{
+  "schema_version": "cellpress.paper_run.v1",
+  "created_at": "2026-07-18T22:30:46.641141+00:00",
+  "study_stage": "extension_generation",
+  "checkpoint_kind": "final",
+  "checkpoint_target": null,
+  "completed_successful_rows": 5046,
+  "planned_rows": 5046,
+  "raw_prediction_rows": 5047,
+  "failed_or_incomplete_rows": 0,
+  "canonical_usage": {
+    "calls": 5046,
+    "input_tokens": 842790,
+    "output_tokens": 460295,
+    "reasoning_tokens": 0,
+    "cached_input_tokens": 119040,
+    "cache_write_tokens": 0,
+    "cost_usd": 0.21899520000000047
+  },
+  "raw_usage": {
+    "calls": 5047,
+    "input_tokens": 843094,
+    "output_tokens": 462343,
+    "reasoning_tokens": 0,
+    "cached_input_tokens": 119040,
+    "cache_write_tokens": 0,
+    "cost_usd": 0.2193480000000005
+  },
+  "observed_cost_usd": 0.21899520000000047,
+  "raw_api_charges_usd": 0.2193480000000005,
+  "incremental_raw_cost_usd": 0.00016559999999998798,
+  "by_dataset": [
+    {
+      "dataset": "MedMCQA",
+      "calls": 2000,
+      "input_tokens": 196099,
+      "output_tokens": 142183,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 50304,
+      "cache_write_tokens": 0,
+      "cost_usd": 0.05415965999999991
+    },
+    {
+      "dataset": "MedQA-USMLE",
+      "calls": 2546,
+      "input_tokens": 454142,
+      "output_tokens": 268412,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 68736,
+      "cache_write_tokens": 0,
+      "cost_usd": 0.12120624000000008
+    },
+    {
+      "dataset": "PubMedQA",
+      "calls": 500,
+      "input_tokens": 192549,
+      "output_tokens": 49700,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": 0.04362930000000002
+    }
+  ],
+  "by_dataset_and_variant": [
+    {
+      "dataset": "MedMCQA",
+      "variant": "choices_to_question",
+      "calls": 1000,
+      "input_tokens": 121347,
+      "output_tokens": 25184,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 50240,
+      "cache_write_tokens": 0,
+      "cost_usd": 0.01993274999999999
+    },
+    {
+      "dataset": "MedMCQA",
+      "variant": "generative_no_choices",
+      "calls": 1000,
+      "input_tokens": 74752,
+      "output_tokens": 116999,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 64,
+      "cache_write_tokens": 0,
+      "cost_usd": 0.03422691000000001
+    },
+    {
+      "dataset": "MedQA-USMLE",
+      "variant": "choices_to_question",
+      "calls": 1273,
+      "input_tokens": 162227,
+      "output_tokens": 56267,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 64192,
+      "cache_write_tokens": 0,
+      "cost_usd": 0.03120243000000006
+    },
+    {
+      "dataset": "MedQA-USMLE",
+      "variant": "generative_no_choices",
+      "calls": 1273,
+      "input_tokens": 291915,
+      "output_tokens": 212145,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 4544,
+      "cache_write_tokens": 0,
+      "cost_usd": 0.09000381000000017
+    },
+    {
+      "dataset": "PubMedQA",
+      "variant": "generative_no_choices",
+      "calls": 500,
+      "input_tokens": 192549,
+      "output_tokens": 49700,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": 0.04362930000000002
+    }
+  ]
+}

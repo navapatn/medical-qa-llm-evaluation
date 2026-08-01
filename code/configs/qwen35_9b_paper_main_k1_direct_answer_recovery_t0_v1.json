@@ -1,0 +1,45 @@
+{
+  "study_id": "cellpress-medical-reasoning-modern-llm",
+  "protocol_version": "paper-production-v5-reasoning-artifact-audit",
+  "analysis_status": "paper_production_recovery_exception",
+  "condition": "five_shot_cot_local_extract",
+  "description": "Final single-item recovery-only configuration for a Qwen3.5 9B response that remained trapped in a repetitive loop after native-thinking and visible-CoT recovery attempts. It preserves the same model, five-shot demonstrations, choices, and temperature 0, turns provider reasoning off, and changes only the final response instruction to force one bounded answer line. Its raw response and configuration are preserved as a documented exception.",
+  "n_shots": 5,
+  "system_prompt": "As a healthcare professional, provide an expert response to each question. Exactly one answer option is the most correct.",
+  "answer_instruction": "Return exactly one line and no explanation: `Answer: (X)`, replacing X with the option letter.",
+  "sample_counts": [1],
+  "estimated_input_tokens": 1400,
+  "estimated_output_tokens": 16,
+  "max_requests": 2773,
+  "max_cost_usd": 12.0,
+  "progress_every": 1,
+  "max_consecutive_errors": 10,
+  "providers": {
+    "openrouter": {
+      "protocol": "openai_chat",
+      "base_url": "https://openrouter.ai/api/v1",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "auth_style": "bearer",
+      "timeout_seconds": 60,
+      "max_retries": 4,
+      "extra_headers": {"X-Title": "CellPress medical reasoning paper production"}
+    }
+  },
+  "models": [
+    {
+      "label": "Qwen3.5 9B direct-answer recovery t0 (OpenRouter)",
+      "provider": "openrouter",
+      "model": "qwen/qwen3.5-9b",
+      "temperature": 0.0,
+      "max_tokens": 64,
+      "input_price_per_million": 0.1,
+      "output_price_per_million": 0.15,
+      "extra_body": {"reasoning": {"enabled": false, "exclude": false}}
+    }
+  ],
+  "datasets": [
+    {"name": "MedQA-USMLE", "path": "data/MedQA-USMLE/test.jsonl", "shots_path": "repo://medical_reasoning/assets/medqa_usmle_5shot.json", "shot_selection": "head"},
+    {"name": "MedMCQA", "path": "data/MedMCQA/validation.jsonl", "shots_path": "data/MedMCQA/train.jsonl", "shot_filter_percentiles": [50, 90], "shot_selection": "per_example", "sample_size": 1000, "selection_method": "legacy_numpy", "selection_seed": 0},
+    {"name": "PubMedQA", "path": "data/PubMedQA/test.json", "shots_path": "data/PubMedQA/train.json", "shot_filter_percentiles": [50, 90], "shot_selection": "per_example"}
+  ]
+}

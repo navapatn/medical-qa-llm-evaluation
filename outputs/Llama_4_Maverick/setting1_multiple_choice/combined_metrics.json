@@ -1,0 +1,35 @@
+[
+  {
+    "model_label": "Llama 4 Maverick 17B-active t0 (OpenRouter)",
+    "provider": "openrouter",
+    "dataset": "MedMCQA",
+    "k": 1,
+    "n": 1000,
+    "accuracy": 0.795,
+    "coverage": 1.0,
+    "mean_vote_entropy": 0.0,
+    "mean_unique_answers": 1.0
+  },
+  {
+    "model_label": "Llama 4 Maverick 17B-active t0 (OpenRouter)",
+    "provider": "openrouter",
+    "dataset": "MedQA-USMLE",
+    "k": 1,
+    "n": 1273,
+    "accuracy": 0.8986645718774549,
+    "coverage": 1.0,
+    "mean_vote_entropy": 0.0,
+    "mean_unique_answers": 1.0
+  },
+  {
+    "model_label": "Llama 4 Maverick 17B-active t0 (OpenRouter)",
+    "provider": "openrouter",
+    "dataset": "PubMedQA",
+    "k": 1,
+    "n": 500,
+    "accuracy": 0.808,
+    "coverage": 1.0,
+    "mean_vote_entropy": 0.0,
+    "mean_unique_answers": 1.0
+  }
+]

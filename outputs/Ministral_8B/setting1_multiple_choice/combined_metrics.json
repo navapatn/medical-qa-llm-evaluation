@@ -1,0 +1,35 @@
+[
+  {
+    "model_label": "Ministral 3 8B 2512 t0 (OpenRouter)",
+    "provider": "openrouter",
+    "dataset": "MedMCQA",
+    "k": 1,
+    "n": 1000,
+    "accuracy": 0.693,
+    "coverage": 1.0,
+    "mean_vote_entropy": 0.0,
+    "mean_unique_answers": 1.0
+  },
+  {
+    "model_label": "Ministral 3 8B 2512 t0 (OpenRouter)",
+    "provider": "openrouter",
+    "dataset": "MedQA-USMLE",
+    "k": 1,
+    "n": 1273,
+    "accuracy": 0.772191673212883,
+    "coverage": 1.0,
+    "mean_vote_entropy": 0.0,
+    "mean_unique_answers": 1.0
+  },
+  {
+    "model_label": "Ministral 3 8B 2512 t0 (OpenRouter)",
+    "provider": "openrouter",
+    "dataset": "PubMedQA",
+    "k": 1,
+    "n": 500,
+    "accuracy": 0.77,
+    "coverage": 1.0,
+    "mean_vote_entropy": 0.0,
+    "mean_unique_answers": 1.0
+  }
+]

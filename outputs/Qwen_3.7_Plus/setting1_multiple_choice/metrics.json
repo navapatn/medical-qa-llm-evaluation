@@ -1,0 +1,68 @@
+[
+  {
+    "model_label": "DeepSeek V4 Pro (OpenRouter)",
+    "provider": "openrouter",
+    "dataset": "MedMCQA",
+    "k": 1,
+    "n": 1000,
+    "accuracy": null,
+    "coverage": null,
+    "mean_vote_entropy": null,
+    "mean_unique_answers": null
+  },
+  {
+    "model_label": "DeepSeek V4 Pro (OpenRouter)",
+    "provider": "openrouter",
+    "dataset": "MedQA-USMLE",
+    "k": 1,
+    "n": 1273,
+    "accuracy": null,
+    "coverage": null,
+    "mean_vote_entropy": null,
+    "mean_unique_answers": null
+  },
+  {
+    "model_label": "DeepSeek V4 Pro (OpenRouter)",
+    "provider": "openrouter",
+    "dataset": "PubMedQA",
+    "k": 1,
+    "n": 500,
+    "accuracy": null,
+    "coverage": null,
+    "mean_vote_entropy": null,
+    "mean_unique_answers": null
+  },
+  {
+    "model_label": "Qwen 3.7 Plus (OpenRouter)",
+    "provider": "openrouter",
+    "dataset": "MedMCQA",
+    "k": 1,
+    "n": 1000,
+    "accuracy": null,
+    "coverage": null,
+    "mean_vote_entropy": null,
+    "mean_unique_answers": null
+  },
+  {
+    "model_label": "Qwen 3.7 Plus (OpenRouter)",
+    "provider": "openrouter",
+    "dataset": "MedQA-USMLE",
+    "k": 1,
+    "n": 1273,
+    "accuracy": null,
+    "coverage": null,
+    "mean_vote_entropy": null,
+    "mean_unique_answers": null
+  },
+  {
+    "model_label": "Qwen 3.7 Plus (OpenRouter)",
+    "provider": "openrouter",
+    "dataset": "PubMedQA",
+    "k": 1,
+    "n": 500,
+    "accuracy": null,
+    "coverage": null,
+    "mean_vote_entropy": null,
+    "mean_unique_answers": null
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "study_id": "cellpress-medical-reasoning-modern-llm",
+  "protocol_version": "paper-production-v5-reasoning-artifact-audit",
+  "analysis_status": "paper_production",
+  "condition": "five_shot_cot_local_extract",
+  "description": "Paper-faithful five-shot chain-of-thought replication at k=1 using Qwen3.5 9B, a retained 2,048-token reasoning budget, deterministic decoding, and retained provider reasoning artifacts.",
+  "n_shots": 5,
+  "system_prompt": "As a healthcare professional, provide an expert response to each question. Exactly one answer option is the most correct.",
+  "sample_counts": [1],
+  "estimated_input_tokens": 1400,
+  "estimated_output_tokens": 3000,
+  "max_requests": 2773,
+  "max_cost_usd": 8.0,
+  "progress_every": 200,
+  "max_consecutive_errors": 10,
+  "providers": {"openrouter": {"protocol": "openai_chat", "base_url": "https://openrouter.ai/api/v1", "api_key_env": "OPENROUTER_API_KEY", "auth_style": "bearer", "timeout_seconds": 180, "max_retries": 4, "extra_headers": {"X-Title": "CellPress medical reasoning paper production"}}},
+  "models": [{"label": "Qwen3.5 9B reasoning-budget-2048 t0 (OpenRouter)", "provider": "openrouter", "model": "qwen/qwen3.5-9b", "temperature": 0.0, "max_tokens": 6144, "input_price_per_million": 0.1, "output_price_per_million": 0.15, "extra_body": {"reasoning": {"max_tokens": 2048, "exclude": false}}}],
+  "datasets": [
+    {"name": "MedQA-USMLE", "path": "data/MedQA-USMLE/test.jsonl", "shots_path": "repo://medical_reasoning/assets/medqa_usmle_5shot.json", "shot_selection": "head"},
+    {"name": "MedMCQA", "path": "data/MedMCQA/validation.jsonl", "shots_path": "data/MedMCQA/train.jsonl", "shot_filter_percentiles": [50, 90], "shot_selection": "per_example", "sample_size": 1000, "selection_method": "legacy_numpy", "selection_seed": 0},
+    {"name": "PubMedQA", "path": "data/PubMedQA/test.json", "shots_path": "data/PubMedQA/train.json", "shot_filter_percentiles": [50, 90], "shot_selection": "per_example"}
+  ]
+}

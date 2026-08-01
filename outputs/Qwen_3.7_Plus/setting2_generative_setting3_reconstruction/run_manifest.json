@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-07-19T07:58:54.854106+00:00",
+  "condition": "information_ablation_judge_inputs_v1",
+  "config_sha256": "74cd66301c913af79a774650173d5e4fcbf1d4091e8cc448c586d166a35304a4",
+  "model": {
+    "label": "Qwen 3.7 Plus t0 (OpenRouter)",
+    "provider": "openrouter",
+    "model": "qwen/qwen3.7-plus",
+    "temperature": 0.0
+  },
+  "selected_questions": 2773,
+  "baseline_available": true,
+  "planned_requests": 5046,
+  "completed_requests": 400,
+  "observed_cost_usd": 1.9234291199999998,
+  "raw_api_charges_usd": 2.44985408,
+  "duplicate_audit_rows": 11,
+  "max_cost_usd": 20.0,
+  "stopped_for_cost": false,
+  "variant_counts": {
+    "choices_to_question": 2273,
+    "generative_no_choices": 2773
+  },
+  "dataset_counts": {
+    "MedMCQA": 1000,
+    "MedQA-USMLE": 1273,
+    "PubMedQA": 500
+  },
+  "outputs": {
+    "planned_items": "codex_version/papers/cellpress-medical-reasoning/runs/paper_qwen37_plus_datasetaware_extensions_full_t0_v1/planned_items.jsonl",
+    "predictions": "codex_version/papers/cellpress-medical-reasoning/runs/paper_qwen37_plus_datasetaware_extensions_full_t0_v1/predictions.jsonl",
+    "baseline_predictions": "codex_version/papers/cellpress-medical-reasoning/runs/paper_qwen37_plus_datasetaware_extensions_full_t0_v1/baseline_predictions.jsonl",
+    "metrics": "codex_version/papers/cellpress-medical-reasoning/runs/paper_qwen37_plus_datasetaware_extensions_full_t0_v1/metrics.json",
+    "summary": "codex_version/papers/cellpress-medical-reasoning/runs/paper_qwen37_plus_datasetaware_extensions_full_t0_v1/summary.md",
+    "config_snapshot": "codex_version/papers/cellpress-medical-reasoning/runs/paper_qwen37_plus_datasetaware_extensions_full_t0_v1/config.snapshot.json",
+    "frozen_run_inputs": "codex_version/papers/cellpress-medical-reasoning/runs/paper_qwen37_plus_datasetaware_extensions_full_t0_v1/frozen_run_inputs.json",
+    "cost_checkpoints_jsonl": "codex_version/papers/cellpress-medical-reasoning/runs/paper_qwen37_plus_datasetaware_extensions_full_t0_v1/cost_checkpoints.jsonl",
+    "cost_checkpoints_csv": "codex_version/papers/cellpress-medical-reasoning/runs/paper_qwen37_plus_datasetaware_extensions_full_t0_v1/cost_checkpoints.csv"
+  }
+}

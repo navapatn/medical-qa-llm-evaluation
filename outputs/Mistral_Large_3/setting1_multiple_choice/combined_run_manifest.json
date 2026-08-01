@@ -1,0 +1,104 @@
+{
+  "schema_version": "cellpress.combined_paper_run.v1",
+  "generated_at": "2026-07-18T09:44:51.826888+00:00",
+  "run_dir": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1",
+  "model": {
+    "label": "Mistral Large 3 2512 t0 (OpenRouter)",
+    "provider": "openrouter",
+    "model": "mistralai/mistral-large-2512",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "input_price_per_million": 0.5,
+    "output_price_per_million": 1.5
+  },
+  "planned_rows": 2773,
+  "completed_rows": 2773,
+  "raw_prediction_rows": 2792,
+  "duplicate_or_retry_rows": 19,
+  "failed_canonical_rows": 0,
+  "truncated_raw_rows": 0,
+  "api_error_raw_rows": 0,
+  "response_models": [
+    "mistralai/mistral-large-2512"
+  ],
+  "total_cost_usd": 2.5351227999999977,
+  "canonical_cost_usd": 2.5206679999999952,
+  "dataset_results": [
+    {
+      "dataset": "MedMCQA",
+      "n": 1000,
+      "accuracy": 0.807,
+      "parse_coverage": 1.0,
+      "cost_usd": 0.9837681000000007
+    },
+    {
+      "dataset": "MedQA-USMLE",
+      "n": 1273,
+      "accuracy": 0.8868813825608798,
+      "parse_coverage": 1.0,
+      "cost_usd": 0.7731884999999997
+    },
+    {
+      "dataset": "PubMedQA",
+      "n": 500,
+      "accuracy": 0.774,
+      "parse_coverage": 1.0,
+      "cost_usd": 0.7637113999999999
+    }
+  ],
+  "recovery_exceptions": [],
+  "source_prediction_files": [
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1/predictions.jsonl",
+      "sha256": "8ab6fce4eadc87aca31b1d648d7de89078ee411d02bd3f3b566343363d45f200"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1/retries/same_protocol_v1/shard_0/predictions.jsonl",
+      "sha256": "5809aede1591b62363e28e1b08abf49393e8931ad52e2c5dd04c1e60b9f09203"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1/retries/same_protocol_v1/shard_1/predictions.jsonl",
+      "sha256": "1af8966d1d42cb6dc8a0da5c66f1b403a6a384b7131ed35ef18d73a1cce5194b"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1/retries/same_protocol_v1/shard_2/predictions.jsonl",
+      "sha256": "19577ec87f3eacfab0d81b67cb63386cac6998e5bc04f352777423b7091f3cea"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1/retries/same_protocol_v1/shard_3/predictions.jsonl",
+      "sha256": "67cd657e463bc2b4eaba62ffc9db836868bf390340d728ab9b9e822857a39c76"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1/retries/same_protocol_v2/shard_2/predictions.jsonl",
+      "sha256": "bd1d2ee9ceeb0bf832b3e8b6db528aec38aaec110947544f76f4e62a299afec4"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1/retries/same_protocol_v2/shard_3/predictions.jsonl",
+      "sha256": "02c4e837ae3a6cc1222a085ee8093d3a80a38faaae9075f33d414bd32bba58c0"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1/shards/shard_0/predictions.jsonl",
+      "sha256": "102e13b3a9b24044fd285e8f25526716b10694e00998a4c80cc1a37caf7f261b"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1/shards/shard_1/predictions.jsonl",
+      "sha256": "37a98b1045836e6f9c549a1beabe4835182e3586d8870ce02e220dcf19f83300"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1/shards/shard_2/predictions.jsonl",
+      "sha256": "972201d5c182228c717c0dee70305a7283636fb31305533d0128c2cc8ed49174"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1/shards/shard_3/predictions.jsonl",
+      "sha256": "515532dc0551fd1e3463a4406350fad249905140f4c3eb8d30c6ad291303fc32"
+    }
+  ],
+  "artifacts": {
+    "combined_predictions": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1/combined_predictions.jsonl",
+    "combined_metrics_json": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1/combined_metrics.json",
+    "combined_metrics_csv": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1/combined_metrics.csv",
+    "combined_cost_checkpoints_jsonl": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1/combined_cost_checkpoints.jsonl",
+    "combined_cost_checkpoints_csv": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1/combined_cost_checkpoints.csv",
+    "recovery_exceptions": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_main_k1_t0_v1/recovery_exceptions.json"
+  }
+}

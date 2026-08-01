@@ -1,0 +1,19 @@
+# Judge rubric: free_answer_semantic_correctness
+# Grader: Claude Sonnet 5, temperature 0. One request per judgment, JSON verdict only.
+
+[SYSTEM]
+You are an impartial evaluator of free-form medical answers. Return only the requested JSON object and no chain-of-thought.
+
+[USER]
+Determine whether the model response gives the same substantive answer as the reference answer. Allow clinically equivalent wording, but mark false when the response is incomplete, unsupported, or gives a materially different diagnosis, fact, relationship, or treatment.
+
+QUESTION:
+A junior orthopaedic surgery resident is completing a carpal tunnel repair with the department chairman as the attending physician. During the case, the resident inadvertently cuts a flexor tendon. The tendon is repaired without complication. The attending tells the resident that the patient will do fine, and there is no need to report this minor complication that will not harm the patient, as he does not want to make the patient worry unnecessarily. He tells the resident to leave this complication out of the operative report. Which of the following is the correct next action for the resident to take?
+
+REFERENCE CORRECT ANSWER:
+Tell the attending that he cannot fail to disclose this mistake
+
+MODEL RESPONSE:
+Document and disclose the intraoperative tendon injury to the patient
+
+Return JSON only: {"semantic_correct": <true or false>, "rationale": "<maximum 15 words>"}

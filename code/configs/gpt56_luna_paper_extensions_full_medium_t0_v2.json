@@ -1,0 +1,87 @@
+{
+  "study_id": "cellpress-medical-reasoning-modern-llm",
+  "protocol_version": "paper-production-v2-native-reasoning",
+  "analysis_status": "paper_production",
+  "condition": "information_ablation_extensions_v1",
+  "description": "Full-dataset choices-to-question and question-without-choices generation conditions using GPT-5.6 Luna with medium reasoning and deterministic decoding.",
+  "n_shots": 5,
+  "system_prompt": "As a healthcare professional, provide an expert response to each question. Exactly one answer option is the most correct.",
+  "selection_seed": 20260716,
+  "max_requests": 5546,
+  "max_cost_usd": 32.0,
+  "max_workers": 8,
+  "progress_every": 200,
+  "baseline_run_dir": "runs/paper_gpt56_luna_main_k1_medium_t0_v2",
+  "providers": {
+    "openrouter": {
+      "protocol": "openai_chat",
+      "base_url": "https://openrouter.ai/api/v1",
+      "api_key_env": "OPENROUTER_API_KEY",
+      "auth_style": "bearer",
+      "timeout_seconds": 180,
+      "max_retries": 4,
+      "extra_headers": {
+        "X-Title": "CellPress medical reasoning paper production"
+      }
+    }
+  },
+  "models": [
+    {
+      "label": "GPT-5.6 Luna medium t0 (OpenRouter)",
+      "provider": "openrouter",
+      "model": "openai/gpt-5.6-luna",
+      "temperature": 0.0,
+      "input_price_per_million": 1.0,
+      "output_price_per_million": 6.0,
+      "extra_body": {
+        "reasoning": {
+          "effort": "medium"
+        }
+      }
+    }
+  ],
+  "variant_extra_body": {
+    "choices_to_question": {
+      "reasoning": {
+        "effort": "medium"
+      }
+    },
+    "generative_no_choices": {
+      "reasoning": {
+        "effort": "medium"
+      }
+    }
+  },
+  "datasets": [
+    {
+      "name": "MedQA-USMLE",
+      "path": "data/MedQA-USMLE/test.jsonl",
+      "shots_path": "repo://medical_reasoning/assets/medqa_usmle_5shot.json",
+      "shot_selection": "head",
+      "extension_sample_size": 1273
+    },
+    {
+      "name": "MedMCQA",
+      "path": "data/MedMCQA/validation.jsonl",
+      "shots_path": "data/MedMCQA/train.jsonl",
+      "shot_filter_percentiles": [50, 90],
+      "shot_selection": "per_example",
+      "sample_size": 1000,
+      "selection_method": "legacy_numpy",
+      "selection_seed": 0,
+      "extension_sample_size": 1000
+    },
+    {
+      "name": "PubMedQA",
+      "path": "data/PubMedQA/test.json",
+      "shots_path": "data/PubMedQA/train.json",
+      "shot_filter_percentiles": [50, 90],
+      "shot_selection": "per_example",
+      "extension_sample_size": 500
+    }
+  ],
+  "variants": [
+    "choices_to_question",
+    "generative_no_choices"
+  ]
+}

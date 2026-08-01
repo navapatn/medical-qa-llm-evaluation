@@ -1,0 +1,43 @@
+{
+  "schema_version": "cellpress.judge_run.v1",
+  "generated_at": "2026-07-21T04:26:06.471871+00:00",
+  "config_sha256": "53e64f00e19ef41d0a09e9191ac85be560f59694072f63974f31db98b07ed87e",
+  "source_model": "meta-llama/llama-3.1-8b-instruct",
+  "judge_model": {
+    "label": "Claude Sonnet 5 short-reasoning boolean judge (OpenRouter)",
+    "provider": "openrouter",
+    "model": "anthropic/claude-sonnet-5",
+    "temperature": 0.0,
+    "max_tokens": 1024,
+    "input_price_per_million": 2.0,
+    "output_price_per_million": 10.0,
+    "extra_body": {
+      "reasoning": {
+        "effort": "low"
+      }
+    }
+  },
+  "planned_requests": 5046,
+  "completed_requests": 5046,
+  "parsed_requests": 5043,
+  "parse_error_requests": 3,
+  "raw_rows": 5046,
+  "observed_cost_usd": 7.071891999999987,
+  "raw_api_charges_usd": 7.071891999999987,
+  "max_cost_usd": 12.0,
+  "stopped_for_cost": false,
+  "task_counts": {
+    "free_answer_semantic_correctness": 2773,
+    "question_reconstruction_fidelity": 2273
+  },
+  "response_models": [
+    "anthropic/claude-sonnet-5"
+  ],
+  "outputs": {
+    "planned_items": "papers/cellpress-medical-reasoning/runs/paper_claude_sonnet5_judge_llama31_8b_short_reason_v1/planned_items.jsonl",
+    "predictions": "papers/cellpress-medical-reasoning/runs/paper_claude_sonnet5_judge_llama31_8b_short_reason_v1/predictions.jsonl",
+    "config_snapshot": "papers/cellpress-medical-reasoning/runs/paper_claude_sonnet5_judge_llama31_8b_short_reason_v1/config.snapshot.json",
+    "frozen_run_inputs": "papers/cellpress-medical-reasoning/runs/paper_claude_sonnet5_judge_llama31_8b_short_reason_v1/frozen_run_inputs.json",
+    "cost_checkpoints_csv": "papers/cellpress-medical-reasoning/runs/paper_claude_sonnet5_judge_llama31_8b_short_reason_v1/cost_checkpoints.csv"
+  }
+}

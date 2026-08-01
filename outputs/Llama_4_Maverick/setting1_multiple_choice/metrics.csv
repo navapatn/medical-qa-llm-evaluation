@@ -1,0 +1,4 @@
+model_label,provider,dataset,k,n,accuracy,coverage,mean_vote_entropy,mean_unique_answers
+Llama 4 Maverick 17B-active t0 (OpenRouter),openrouter,MedMCQA,1,1000,,,,
+Llama 4 Maverick 17B-active t0 (OpenRouter),openrouter,MedQA-USMLE,1,1273,0.016496465043205028,0.019638648860958365,0.0,0.019638648860958365
+Llama 4 Maverick 17B-active t0 (OpenRouter),openrouter,PubMedQA,1,500,,,,

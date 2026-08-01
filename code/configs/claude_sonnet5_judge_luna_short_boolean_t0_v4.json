@@ -1,0 +1,17 @@
+{
+  "study_id": "cellpress-medical-reasoning-modern-llm",
+  "protocol_version": "paper-production-judge-short-boolean-v1",
+  "analysis_status": "paper_production",
+  "condition": "llm_as_judge_extensions",
+  "description": "Claude Sonnet 5 judges GPT-5.6 Luna extension outputs using frozen compact Boolean-only JSON prompts; no judge reasoning or rationale is requested.",
+  "source_model": "openai/gpt-5.6-luna",
+  "judge_items_path": "runs/paper_gpt56_luna_datasetaware_extensions_full_medium_t0_v1/judge_items.jsonl",
+  "judge_items_sha256": "c4105d7ca8f9917465a4fd1db1d0e5bfdf76630f00f258dce48e46746781b266",
+  "expected_judge_items": 5046,
+  "max_requests": 5046,
+  "max_cost_usd": 10.0,
+  "max_workers": 8,
+  "progress_every": 200,
+  "providers": {"openrouter": {"protocol": "openai_chat", "base_url": "https://openrouter.ai/api/v1", "api_key_env": "OPENROUTER_API_KEY", "auth_style": "bearer", "timeout_seconds": 180, "max_retries": 4, "extra_headers": {"X-Title": "CellPress medical reasoning LLM judge"}}},
+  "models": [{"label": "Claude Sonnet 5 short-Boolean judge (OpenRouter)", "provider": "openrouter", "model": "anthropic/claude-sonnet-5", "temperature": 0.0, "max_tokens": 16, "input_price_per_million": 2.0, "output_price_per_million": 10.0, "extra_body": {"reasoning": {"effort": "none", "exclude": true}}}]
+}

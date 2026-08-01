@@ -1,0 +1,14 @@
+{
+  "schema_version": "cellpress.judge_plan.v1",
+  "generated_at": "2026-07-20T17:41:29.077430+00:00",
+  "source_model": "openai/gpt-oss-20b",
+  "planned_judge_calls": 5046,
+  "task_counts": {
+    "free_answer_semantic_correctness": 2773,
+    "question_reconstruction_fidelity": 2273
+  },
+  "reference_choices_excluded_from_judge_prompts": true,
+  "reference_correct_answer_included_only_for_free_answer_judgment": true,
+  "judge_items_sha256": "392ec8c258e6e70a30eb53fe28c05eefa09387e1c21591cb20f74254637fc4b4",
+  "judge_items": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_datasetaware_extensions_full_medium_t0_v1/judge_items.jsonl"
+}

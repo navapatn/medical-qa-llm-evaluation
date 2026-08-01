@@ -1,0 +1,14 @@
+{
+  "schema_version": "cellpress.judge_plan.v1",
+  "generated_at": "2026-07-19T02:01:49.113045+00:00",
+  "source_model": "meta-llama/llama-3.1-8b-instruct",
+  "planned_judge_calls": 5046,
+  "task_counts": {
+    "free_answer_semantic_correctness": 2773,
+    "question_reconstruction_fidelity": 2273
+  },
+  "reference_choices_excluded_from_judge_prompts": true,
+  "reference_correct_answer_included_only_for_free_answer_judgment": true,
+  "judge_items_sha256": "7471caac54f3531fac7515406d8b2a96af0324500fa0ba126c6f2384d207e1f4",
+  "judge_items": "codex_version/papers/cellpress-medical-reasoning/runs/paper_llama31_8b_datasetaware_extensions_full_t0_v1/judge_items.jsonl"
+}

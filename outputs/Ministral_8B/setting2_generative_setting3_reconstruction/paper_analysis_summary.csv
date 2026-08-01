@@ -1,0 +1,6 @@
+dataset,variant,n,cost_usd,input_tokens,output_tokens,reasoning_tokens,mean_question_token_f1,question_mark_compliance,local_strict_accuracy,local_option_recovery_accuracy
+MedMCQA,choices_to_question,1000,0.019932749999999992,121347,25184,0,0.19372607754655863,0.996,,
+MedMCQA,generative_no_choices,1000,0.034226910000000006,74752,116999,0,,,0.136,0.236
+MedQA-USMLE,choices_to_question,1273,0.031202430000000055,162227,56267,0,0.2294121297930907,0.9960722702278083,,
+MedQA-USMLE,generative_no_choices,1273,0.09000381000000017,291915,212145,0,,,0.2152395915161037,0.3770620581304006
+PubMedQA,generative_no_choices,500,0.043629300000000024,192549,49700,0,,,0.548,0.476

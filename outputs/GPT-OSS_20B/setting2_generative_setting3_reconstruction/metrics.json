@@ -1,0 +1,37 @@
+{
+  "baseline": {
+    "n": 2773,
+    "accuracy": 0.7749729534799856
+  },
+  "variants": [
+    {
+      "variant": "choices_to_question",
+      "n": 545,
+      "accuracy": null,
+      "abstention_rate": 0.0,
+      "strict_accuracy": null,
+      "option_recovery_accuracy": null,
+      "mean_question_token_f1": 0.17554136723816138
+    },
+    {
+      "variant": "generative_no_choices",
+      "n": 655,
+      "accuracy": 0.500763358778626,
+      "abstention_rate": 0.0,
+      "strict_accuracy": 0.27633587786259545,
+      "option_recovery_accuracy": 0.49770992366412214,
+      "mean_question_token_f1": null
+    }
+  ],
+  "position_robustness": {
+    "questions": 0,
+    "fully_invariant_rate_including_baseline": null,
+    "all_new_rotations_correct_rate": null
+  },
+  "candidate_verification": {
+    "questions": 0,
+    "exact_question_accuracy": null,
+    "correct_candidate_sensitivity": null,
+    "distractor_specificity": null
+  }
+}

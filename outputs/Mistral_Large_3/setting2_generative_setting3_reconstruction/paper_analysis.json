@@ -1,0 +1,132 @@
+{
+  "schema_version": "cellpress.extension_analysis.v1",
+  "generated_at": "2026-07-18T22:59:53.890697+00:00",
+  "model": {
+    "label": "Mistral Large 3 2512 t0 (OpenRouter)",
+    "provider": "openrouter",
+    "model": "mistralai/mistral-large-2512",
+    "temperature": 0.0,
+    "input_price_per_million": 0.5,
+    "output_price_per_million": 1.5
+  },
+  "planned_calls": 5046,
+  "completed_calls": 5046,
+  "raw_rows": 5046,
+  "duplicate_or_retry_rows": 0,
+  "api_error_rows": 0,
+  "truncated_rows": 0,
+  "finish_reasons": {
+    "stop": 5046
+  },
+  "total_cost_usd": 0.8914212000000009,
+  "source_prediction_files": [
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_datasetaware_extensions_full_t0_v1/predictions.jsonl",
+      "sha256": "a384a122b19d3fbb2b7ab6d9028e4f44ec8cf600b95e19ba3d610b04070f9163"
+    }
+  ],
+  "baseline_accuracy": {
+    "MedMCQA": 0.807,
+    "MedQA-USMLE": 0.8868813825608798,
+    "PubMedQA": 0.774
+  },
+  "condition_results": [
+    {
+      "dataset": "MedMCQA",
+      "variant": "choices_to_question",
+      "n": 1000,
+      "cost_usd": 0.06535170000000005,
+      "input_tokens": 121347,
+      "output_tokens": 20106,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 56624,
+      "cache_write_tokens": 0,
+      "mean_question_token_f1": 0.23879737985909727,
+      "question_mark_compliance": 1.0,
+      "local_strict_accuracy": null,
+      "local_option_recovery_accuracy": null
+    },
+    {
+      "dataset": "MedMCQA",
+      "variant": "generative_no_choices",
+      "n": 1000,
+      "cost_usd": 0.1704971,
+      "input_tokens": 74752,
+      "output_tokens": 97205,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 28192,
+      "cache_write_tokens": 0,
+      "mean_question_token_f1": null,
+      "question_mark_compliance": null,
+      "local_strict_accuracy": 0.191,
+      "local_option_recovery_accuracy": 0.338
+    },
+    {
+      "dataset": "MedQA-USMLE",
+      "variant": "choices_to_question",
+      "n": 1273,
+      "cost_usd": 0.0923308,
+      "input_tokens": 162227,
+      "output_tokens": 29011,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 71776,
+      "cache_write_tokens": 0,
+      "mean_question_token_f1": 0.1400584318942265,
+      "question_mark_compliance": 0.9984289080911233,
+      "local_strict_accuracy": null,
+      "local_option_recovery_accuracy": null
+    },
+    {
+      "dataset": "MedQA-USMLE",
+      "variant": "generative_no_choices",
+      "n": 1273,
+      "cost_usd": 0.42418890000000015,
+      "input_tokens": 291915,
+      "output_tokens": 196374,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 36288,
+      "cache_write_tokens": 0,
+      "mean_question_token_f1": null,
+      "question_mark_compliance": null,
+      "local_strict_accuracy": 0.2922230950510605,
+      "local_option_recovery_accuracy": 0.4807541241162608
+    },
+    {
+      "dataset": "PubMedQA",
+      "variant": "generative_no_choices",
+      "n": 500,
+      "cost_usd": 0.13905270000000008,
+      "input_tokens": 192549,
+      "output_tokens": 33098,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 15264,
+      "cache_write_tokens": 0,
+      "mean_question_token_f1": null,
+      "question_mark_compliance": null,
+      "local_strict_accuracy": 0.664,
+      "local_option_recovery_accuracy": 0.524
+    }
+  ],
+  "judge_plan": {
+    "schema_version": "cellpress.judge_plan.v1",
+    "generated_at": "2026-07-18T22:59:53.838291+00:00",
+    "source_model": "mistralai/mistral-large-2512",
+    "planned_judge_calls": 5046,
+    "task_counts": {
+      "free_answer_semantic_correctness": 2773,
+      "question_reconstruction_fidelity": 2273
+    },
+    "reference_choices_excluded_from_judge_prompts": true,
+    "reference_correct_answer_included_only_for_free_answer_judgment": true,
+    "judge_items_sha256": "de90bf44afce7a27e76e8c11cf46f286a2be9deacace9a0adbb385ef4278585a",
+    "judge_items": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_datasetaware_extensions_full_t0_v1/judge_items.jsonl"
+  },
+  "artifacts": {
+    "canonical_predictions": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_datasetaware_extensions_full_t0_v1/canonical_predictions.jsonl",
+    "paper_analysis_summary_csv": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_datasetaware_extensions_full_t0_v1/paper_analysis_summary.csv",
+    "combined_cost_checkpoints_jsonl": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_datasetaware_extensions_full_t0_v1/combined_cost_checkpoints.jsonl",
+    "combined_cost_checkpoints_csv": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_datasetaware_extensions_full_t0_v1/combined_cost_checkpoints.csv",
+    "judge_items": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_datasetaware_extensions_full_t0_v1/judge_items.jsonl",
+    "judge_plan_manifest": "codex_version/papers/cellpress-medical-reasoning/runs/paper_mistral_large3_datasetaware_extensions_full_t0_v1/judge_plan_manifest.json"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schema_version": "cellpress.combined_paper_run.v1",
+  "generated_at": "2026-07-18T00:44:08.934149+00:00",
+  "run_dir": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1",
+  "model": {
+    "label": "GPT-OSS 20B medium t0 (OpenRouter)",
+    "provider": "openrouter",
+    "model": "openai/gpt-oss-20b",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "input_price_per_million": 0.03,
+    "output_price_per_million": 0.13,
+    "extra_body": {
+      "reasoning": {
+        "effort": "medium",
+        "exclude": false
+      }
+    }
+  },
+  "planned_rows": 2773,
+  "completed_rows": 2773,
+  "raw_prediction_rows": 2837,
+  "duplicate_or_retry_rows": 64,
+  "failed_canonical_rows": 0,
+  "truncated_raw_rows": 54,
+  "api_error_raw_rows": 0,
+  "response_models": [
+    "openai/gpt-oss-20b"
+  ],
+  "total_cost_usd": 0.47262088499999894,
+  "canonical_cost_usd": 0.4074954750000008,
+  "dataset_results": [
+    {
+      "dataset": "MedMCQA",
+      "n": 1000,
+      "accuracy": 0.688,
+      "parse_coverage": 1.0,
+      "cost_usd": 0.11153339199999994
+    },
+    {
+      "dataset": "MedQA-USMLE",
+      "n": 1273,
+      "accuracy": 0.8531029065200314,
+      "parse_coverage": 1.0,
+      "cost_usd": 0.23078518200000017
+    },
+    {
+      "dataset": "PubMedQA",
+      "n": 500,
+      "accuracy": 0.75,
+      "parse_coverage": 1.0,
+      "cost_usd": 0.065176901
+    }
+  ],
+  "source_prediction_files": [
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/retries/max_tokens_16384/shard_1/predictions.jsonl",
+      "sha256": "a2ac230f2f019ae85474618a73eac0f52c56a1d62765841c0f4d25f5d3ac4f2f"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/retries/max_tokens_16384/shard_2/predictions.jsonl",
+      "sha256": "027e56aba748a9435ca69eb995cf720294e99c04699fe35a847764898aab70aa"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/retries/max_tokens_16384/shard_3/predictions.jsonl",
+      "sha256": "1687c524d276a23b7ffc61a2cc9e13df2d8eefbf7b0417e1636d76dfaabfb73c"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/retries/max_tokens_32768/shard_3/predictions.jsonl",
+      "sha256": "dd756650029cdb6a0f22e431ffce5f7affad308e4deed2e0e14b38c72dc3af14"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/retries/max_tokens_8192/shard_0/predictions.jsonl",
+      "sha256": "d50cc9d91c6ea81eef0a08a4cc88c26f1d7402f7c2c2961a25dad7e9cce7deff"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/retries/max_tokens_8192/shard_1/predictions.jsonl",
+      "sha256": "92768b1db786b1117682c6c686a1277a0ca1043a5634384fe854ed3e16779f9a"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/retries/max_tokens_8192/shard_2/predictions.jsonl",
+      "sha256": "410ba48cff195337cdc8368ed2b9881929bbbd5f3942918ff220a5f5f25979b5"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/retries/max_tokens_8192/shard_3/predictions.jsonl",
+      "sha256": "c479317cb65d1d575c7d38069feb34fd8eb290209f203b288f70e4fff0b1cd2c"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/retries/pathological_low_reasoning/shard_3/predictions.jsonl",
+      "sha256": "d838e5a61497570704ba8acfb377d28efa40226335667230da8ba471bd15ba06"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/retries/unparsed_medium/shard_0/predictions.jsonl",
+      "sha256": "15b21cdb9cc6a04244b0d7d7dcc5747892ef560eda0cf9e83bcdf9f209039c30"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/retries/unparsed_medium/shard_1/predictions.jsonl",
+      "sha256": "e7f7d8a2cc8b913408ce0c641d2de8acbd82c4d3f55fefd2149daf6111c8d21f"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/retries/unparsed_medium/shard_2/predictions.jsonl",
+      "sha256": "1acfd6d905f8a1c74cc4e4da8361acde1e7434b45079a5948bf1f3be9b4b8bf8"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/retries/unparsed_medium/shard_3/predictions.jsonl",
+      "sha256": "ac0ddbb52f14cb62ec2350ea495a8a0d1964f81d4e077bb5637be7dbac4e2233"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/shards/shard_0/predictions.jsonl",
+      "sha256": "d93a5811ef405522928083797cbd24bedbe4fb9ae054317cc76cb5232eebf163"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/shards/shard_1/predictions.jsonl",
+      "sha256": "3cbfaeacac8f042af7820b98fc82f575fbbc2b1e8034065de9fa0058b3983dd5"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/shards/shard_2/predictions.jsonl",
+      "sha256": "7ebb91a2cd15c3ae780364669cf9850dda131e0c915c4c5ced833fd78f5b7fe9"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/shards/shard_3/predictions.jsonl",
+      "sha256": "0d9a99528abc23b30d22a755147074f56aa4dbd4c347af5a664a247c3845c6f4"
+    }
+  ],
+  "artifacts": {
+    "combined_predictions": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/combined_predictions.jsonl",
+    "combined_metrics_json": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/combined_metrics.json",
+    "combined_metrics_csv": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/combined_metrics.csv",
+    "combined_cost_checkpoints_jsonl": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/combined_cost_checkpoints.jsonl",
+    "combined_cost_checkpoints_csv": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt_oss20_main_k1_medium_t0_v1/combined_cost_checkpoints.csv"
+  }
+}

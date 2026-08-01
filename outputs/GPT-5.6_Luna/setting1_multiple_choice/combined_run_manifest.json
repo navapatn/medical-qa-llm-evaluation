@@ -1,0 +1,99 @@
+{
+  "schema_version": "cellpress.combined_paper_run.v1",
+  "generated_at": "2026-07-17T07:20:49.504890+00:00",
+  "run_dir": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3",
+  "model": {
+    "label": "GPT-5.6 Luna medium t0 (OpenRouter)",
+    "provider": "openrouter",
+    "model": "openai/gpt-5.6-luna",
+    "temperature": 0.0,
+    "max_tokens": 4096,
+    "input_price_per_million": 1.0,
+    "output_price_per_million": 6.0,
+    "extra_body": {
+      "reasoning": {
+        "effort": "medium"
+      }
+    }
+  },
+  "planned_rows": 2773,
+  "completed_rows": 2773,
+  "raw_prediction_rows": 2973,
+  "duplicate_or_retry_rows": 200,
+  "failed_canonical_rows": 0,
+  "truncated_raw_rows": 0,
+  "api_error_raw_rows": 0,
+  "response_models": [
+    "openai/gpt-5.6-luna"
+  ],
+  "total_cost_usd": 8.065240699999991,
+  "canonical_cost_usd": 7.660831399999997,
+  "dataset_results": [
+    {
+      "dataset": "MedMCQA",
+      "n": 1000,
+      "accuracy": 0.838,
+      "parse_coverage": 1.0,
+      "cost_usd": 2.6346262500000033
+    },
+    {
+      "dataset": "MedQA-USMLE",
+      "n": 1273,
+      "accuracy": 0.9465828750981933,
+      "parse_coverage": 0.9992144540455616,
+      "cost_usd": 3.0111934000000016
+    },
+    {
+      "dataset": "PubMedQA",
+      "n": 500,
+      "accuracy": 0.78,
+      "parse_coverage": 1.0,
+      "cost_usd": 2.01501175
+    }
+  ],
+  "source_prediction_files": [
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/predictions.jsonl",
+      "sha256": "cc468a5d6a38513cbacce6a2b84a434d344ef1236b576fb09f58fa91ca91371b"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/shards/shard_0/predictions.jsonl",
+      "sha256": "1193aa367fe0f614b82e87235582bf43ae491be68755353442a3d4b4a719c35e"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/shards/shard_1/predictions.jsonl",
+      "sha256": "8ab5f030baa77fadac3f20defac6083dd61db3d57948503767ee699747e74b58"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/shards/shard_2/predictions.jsonl",
+      "sha256": "4de34ee4c287e7d7b56b361ea136f326a57e56933a4ec9cf9758220a19dc6a06"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/shards/shard_3/predictions.jsonl",
+      "sha256": "eabae85d11a883774a373b70bcd46744659df68d13b37e16d32d0213c70a5fd2"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/shards/shard_4/predictions.jsonl",
+      "sha256": "53315ff89d83b5dc6ce2c74841f75b30c21691480b26cee57d67ff0e7366332d"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/shards/shard_5/predictions.jsonl",
+      "sha256": "47f11d666b90ed0f3cb732c5c088eadfac74443352a1de81e8d3c71756ff3a3d"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/shards/shard_6/predictions.jsonl",
+      "sha256": "49a78474dbbcb6a6bf5ec9799dfc3a68e995890d1fe842eacd1a4fd5f32af9a8"
+    },
+    {
+      "path": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/shards/shard_7/predictions.jsonl",
+      "sha256": "39dea6670ff02c6ee621f9c44a1f3b6d2ac7a812d54755a41462ec5da8f8db74"
+    }
+  ],
+  "artifacts": {
+    "combined_predictions": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/combined_predictions.jsonl",
+    "combined_metrics_json": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/combined_metrics.json",
+    "combined_metrics_csv": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/combined_metrics.csv",
+    "combined_cost_checkpoints_jsonl": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/combined_cost_checkpoints.jsonl",
+    "combined_cost_checkpoints_csv": "codex_version/papers/cellpress-medical-reasoning/runs/paper_gpt56_luna_main_k1_medium_t0_v3/combined_cost_checkpoints.csv"
+  }
+}

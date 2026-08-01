@@ -1,0 +1,4 @@
+model_label,provider,dataset,k,n,accuracy,coverage,mean_vote_entropy,mean_unique_answers
+GPT-5.6 Luna medium t0 (OpenRouter),openrouter,MedMCQA,1,1000,,,,
+GPT-5.6 Luna medium t0 (OpenRouter),openrouter,MedQA-USMLE,1,1273,0.15082482325216026,0.15710919088766692,0.0,0.15710919088766692
+GPT-5.6 Luna medium t0 (OpenRouter),openrouter,PubMedQA,1,500,,,,

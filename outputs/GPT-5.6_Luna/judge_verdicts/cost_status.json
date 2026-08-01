@@ -1,0 +1,99 @@
+{
+  "schema_version": "cellpress.paper_run.v1",
+  "created_at": "2026-07-21T00:41:43.529729+00:00",
+  "study_stage": "llm_judge",
+  "checkpoint_kind": "final",
+  "checkpoint_target": null,
+  "completed_successful_rows": 5046,
+  "planned_rows": 5046,
+  "raw_prediction_rows": 5046,
+  "failed_or_incomplete_rows": 0,
+  "canonical_usage": {
+    "calls": 5046,
+    "input_tokens": 2203924,
+    "output_tokens": 265816,
+    "reasoning_tokens": 1899,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 0,
+    "cost_usd": 7.054877999999984
+  },
+  "raw_usage": {
+    "calls": 5046,
+    "input_tokens": 2203924,
+    "output_tokens": 265816,
+    "reasoning_tokens": 1899,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 0,
+    "cost_usd": 7.054877999999984
+  },
+  "observed_cost_usd": 7.054877999999984,
+  "raw_api_charges_usd": 7.054877999999984,
+  "incremental_raw_cost_usd": 0.09090600000000393,
+  "by_dataset": [
+    {
+      "dataset": "MedMCQA",
+      "calls": 2000,
+      "input_tokens": 530925,
+      "output_tokens": 102887,
+      "reasoning_tokens": 408,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": 2.0900160000000043
+    },
+    {
+      "dataset": "MedQA-USMLE",
+      "calls": 2546,
+      "input_tokens": 1292045,
+      "output_tokens": 140684,
+      "reasoning_tokens": 1491,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": 3.980504000000002
+    },
+    {
+      "dataset": "PubMedQA",
+      "calls": 500,
+      "input_tokens": 380954,
+      "output_tokens": 22245,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": 0.9843579999999997
+    }
+  ],
+  "by_dataset_and_variant": [
+    {
+      "dataset": "MedMCQA",
+      "variant": "",
+      "calls": 2000,
+      "input_tokens": 530925,
+      "output_tokens": 102887,
+      "reasoning_tokens": 408,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": 2.0900160000000043
+    },
+    {
+      "dataset": "MedQA-USMLE",
+      "variant": "",
+      "calls": 2546,
+      "input_tokens": 1292045,
+      "output_tokens": 140684,
+      "reasoning_tokens": 1491,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": 3.980504000000002
+    },
+    {
+      "dataset": "PubMedQA",
+      "variant": "",
+      "calls": 500,
+      "input_tokens": 380954,
+      "output_tokens": 22245,
+      "reasoning_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 0,
+      "cost_usd": 0.9843579999999997
+    }
+  ]
+}
