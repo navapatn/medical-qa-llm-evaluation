@@ -1,0 +1,12 @@
+{
+ "model": "medgemma-27b-it",
+ "judge": "anthropic/claude-sonnet-5",
+ "template": "B",
+ "stats": {
+  "ok": 5046,
+  "err": 0,
+  "cost": 7.429727999999996,
+  "true": 1914
+ },
+ "elapsed_s": 3620.6
+}

@@ -1,0 +1,15 @@
+{
+ "model": "medgemma-27b-it",
+ "setting": 1,
+ "stats": {
+  "ok": 1,
+  "err": 0,
+  "trunc": 0,
+  "cost_tok_in": 897,
+  "cost_tok_out": 3431
+ },
+ "estimated_cost_usd": 0.02,
+ "elapsed_s": 14.8,
+ "max_tokens": 16384,
+ "endpoint": "https://dr7.ai/api/v1/medical/chat/completions"
+}

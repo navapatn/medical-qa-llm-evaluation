@@ -3,7 +3,7 @@
 Code and analysis artifacts for *Do Large Language Models know medical questions?
 Evaluating memorization and question-answering ability on medical benchmarks.*
 
-Ten language models from five providers, taken as a smaller/larger pair from
+Twelve language models from six providers, taken as a smaller/larger pair from
 each, were evaluated on 2,773 questions from three medical benchmarks under
 three settings:
 
@@ -22,28 +22,34 @@ This repository holds the **code and the small artifacts**: every script, the
 prompt templates, both judge rubrics, the run configurations, per-run manifests
 and metrics, the derived tables, and the figures as they appear in the paper.
 
-The **model generations and per-question judge verdicts** (~1.35 GB) are too
-large for a code repository and are deposited separately:
+The **model generations and per-question judge verdicts** are too large for a
+code repository and are deposited separately:
 
 > **Archive:** https://doi.org/10.5281/zenodo.21736709 (CC-BY-4.0)
 >
 > That is the concept DOI and always resolves to the latest version.
-> The version deposited alongside this commit is
-> [10.5281/zenodo.21736710](https://doi.org/10.5281/zenodo.21736710).
+>
+> **Note:** the archive currently holds the ten OpenRouter models. The raw
+> MedGemma generations and judge verdicts are not yet deposited; this
+> repository carries their run manifests, the derived twelve-model results,
+> and all the code needed to reproduce them.
 
 Both are needed to re-derive the paper's numbers from scratch. The code here
 runs against the archive's `outputs/` directory.
 
 ```
 code/
-  harness/     runs the models under each setting
+  harness/     runs the models under each setting (run_medgemma.py drives MedGemma)
   judge/       runs the judge and finalizes its verdicts
   analysis/    per-benchmark extraction and result summaries
+  analysis12/  unifies all twelve models and recomputes every reported statistic
   figures/     regenerates every figure in the paper
   configs/     run configurations, including exploratory conditions not reported
 prompts/       the five message templates, exactly as issued
 derived/       small tables underlying the paper's numbers
+  twelve-model/  recomputed twelve-model results, ensemble curves, cost basis
 figures/       the figures as they appear in the paper
+  twelve-model/  the regenerated twelve-model versions
 outputs/       per-run manifests, configs, and metrics (generations are in the archive)
 ```
 
@@ -74,13 +80,33 @@ test split and PubMedQA the full 500-question expert-annotated test split.
 MedMCQA is a fixed seed-0 1,000-question sample of the validation split, because
 its test labels are released only through leaderboard submission.
 
+## Reproducing the twelve-model numbers
+
+`code/analysis12/build_12model.py` joins the ten deposited models with the two
+MedGemma runs on `example_id` and writes per-question outcomes;
+`code/analysis12/stats12.py` recomputes every quantity the paper reports from
+those outcomes. The latter validates itself first by restricting to the original
+ten models and checking that the published values reproduce -- the 30.2-point
+drop, the 0.86 correlation, and the 1,395/105 solved-by-all and missed-by-all
+counts. Run `build_12model.py` before `stats12.py`.
+
+`code/analysis12/status.py` reports run progress and estimated spend, and is
+useful only while the model runs are in flight.
+
 ## Three things worth knowing before reading the results
 
-**Decoding temperature is not uniform.** Eight models were run with greedy
+**Decoding temperature is not uniform.** Ten models were run with greedy
 decoding at temperature 0. DeepSeek V4 Pro and Qwen 3.7 Plus were run at
 temperature 0.5, from a single shared run that evaluated both. Every run's
 recorded temperature is in its `run_manifest.json` and summarized in
 `derived/run_manifest_summary.csv`.
+
+**MedGemma was served by a different provider.** The ten general-purpose models
+were accessed through OpenRouter. MedGemma 4B and 27B were accessed on 5--6
+August 2026 through a separate endpoint serving the released MedGemma weights,
+because they were not available through OpenRouter at the time. That endpoint
+returns no per-request cost, so MedGemma cost figures are token counts priced at
+its published list rates rather than metered charges.
 
 **Qwen 3.5 9B was configured differently across settings.** Its multiple-choice
 run used `enable_thinking: true`; its generative and reconstruction run used

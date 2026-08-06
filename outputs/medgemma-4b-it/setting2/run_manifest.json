@@ -1,0 +1,15 @@
+{
+ "model": "medgemma-4b-it",
+ "setting": 2,
+ "stats": {
+  "ok": 1,
+  "err": 0,
+  "trunc": 0,
+  "cost_tok_in": 53,
+  "cost_tok_out": 17
+ },
+ "estimated_cost_usd": 0.0,
+ "elapsed_s": 0.8,
+ "max_tokens": 6144,
+ "endpoint": "https://dr7.ai/api/v1/medical/chat/completions"
+}
