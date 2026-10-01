@@ -94,35 +94,6 @@ counts. Run `build_12model.py` before `stats12.py`.
 `code/analysis12/status.py` reports run progress and estimated spend, and is
 useful only while the model runs are in flight.
 
-## Three things worth knowing before reading the results
-
-**Decoding temperature is not uniform.** Ten models were run with greedy
-decoding at temperature 0. DeepSeek V4 Pro and Qwen 3.7 Plus were run at
-temperature 0.5, from a single shared run that evaluated both. Every run's
-recorded temperature is in its `run_manifest.json` and summarized in
-`derived/run_manifest_summary.csv`.
-
-**MedGemma was served by a different provider.** The ten general-purpose models
-were accessed through OpenRouter. MedGemma 4B and 27B were accessed on 5--6
-August 2026 through a separate endpoint serving the released MedGemma weights,
-because they were not available through OpenRouter at the time. That endpoint
-returns no per-request cost, so MedGemma cost figures are token counts priced at
-its published list rates rather than metered charges.
-
-**Qwen 3.5 9B was configured differently across settings.** Its multiple-choice
-run used `enable_thinking: true`; its generative and reconstruction run used
-`reasoning: {effort: none, exclude: true}`. The other nine models used the same
-reasoning configuration in both. This matters when reading Qwen 3.5 9B's
-between-setting difference, the largest in the cohort, because some share of it
-may belong to the reasoning configuration rather than to the removal of the
-answer choices. Both configurations are in the deposited config snapshots.
-
-**Settings 2 and 3 are zero-shot; Setting 1 is five-shot.** The five worked
-exemplars appear only in Setting 1, so the between-setting comparison reflects
-removing the answer scaffold and removing the exemplars together. The templates
-in `prompts/` show this directly. A zero-shot re-run of Setting 1 is planned; its
-template is `prompts/setting1_multiple_choice_zero_shot.txt`, and its outputs will be
-deposited when the re-run is complete.
 
 ## A caveat on re-running
 
@@ -132,7 +103,3 @@ so re-querying the same model identifiers later is not guaranteed to reproduce
 these generations. The deposited outputs, not live re-querying, are the
 reproducible record.
 
-## Citation
-
-Citation details will be added on publication. The archived outputs are cited as
-https://doi.org/10.5281/zenodo.21736709.
