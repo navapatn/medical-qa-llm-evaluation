@@ -45,7 +45,8 @@ code/
   analysis12/  unifies all twelve models and recomputes every reported statistic
   figures/     regenerates every figure in the paper
   configs/     run configurations, including exploratory conditions not reported
-prompts/       the five message templates, exactly as issued
+prompts/       the five message templates, exactly as issued, plus the Setting 1
+               template for the planned zero-shot re-run
 derived/       small tables underlying the paper's numbers
   twelve-model/  recomputed twelve-model results, ensemble curves, cost basis
 figures/       the figures as they appear in the paper
@@ -119,7 +120,9 @@ answer choices. Both configurations are in the deposited config snapshots.
 **Settings 2 and 3 are zero-shot; Setting 1 is five-shot.** The five worked
 exemplars appear only in Setting 1, so the between-setting comparison reflects
 removing the answer scaffold and removing the exemplars together. The templates
-in `prompts/` show this directly.
+in `prompts/` show this directly. A zero-shot re-run of Setting 1 is planned; its
+template is `prompts/setting1_multiple_choice_zero_shot.txt`, and its outputs will be
+deposited when the re-run is complete.
 
 ## A caveat on re-running
 

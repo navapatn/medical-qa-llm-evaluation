@@ -1,5 +1,7 @@
 # Setting 1: multiple-choice baseline (five-shot chain of thought)
-# Exact message sequence sent to the provider. Exemplars 1-5 precede the target question.
+# Exact message sequence sent to the provider for the deposited Setting 1 outputs.
+# Exemplars 1-5 precede the target question. A zero-shot re-run of Setting 1 is planned;
+# its prompt is in setting1_multiple_choice_zero_shot.txt.
 
 [SYSTEM]
 As a healthcare professional, provide an expert response to each question. Exactly one answer option is the most correct.
