@@ -45,8 +45,7 @@ code/
   analysis12/  unifies all twelve models and recomputes every reported statistic
   figures/     regenerates every figure in the paper
   configs/     run configurations, including exploratory conditions not reported
-prompts/       the five message templates, exactly as issued, plus the Setting 1
-               template for the planned zero-shot re-run
+prompts/       prompt templates
 derived/       small tables underlying the paper's numbers
   twelve-model/  recomputed twelve-model results, ensemble curves, cost basis
 figures/       the figures as they appear in the paper
