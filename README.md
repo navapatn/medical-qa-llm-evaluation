@@ -7,7 +7,7 @@ Twelve language models from six providers, taken as a smaller/larger pair from
 each, were evaluated on 2,773 questions from three medical benchmarks under
 three settings:
 
-1. **Multiple choice** — the standard format, five-shot chain of thought.
+1. **Multiple choice** — the standard format
 2. **Generative** — the same questions with the answer choices withheld, graded
    by a frozen LLM-as-a-judge rubric.
 3. **Reconstruction** — the model sees only a question's answer choices and must
