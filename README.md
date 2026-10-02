@@ -72,7 +72,7 @@ this repository**; the configs reference environment variable names only.
 
 ## The benchmarks
 
-The three benchmarks are public and are not redistributed here.
+The three benchmarks are public and are not redistributed here due to file size.
 `derived/question_set_fingerprints.csv` gives a SHA-256 over the sorted question
 identifiers of each evaluation set, so the exact subsets used can be
 reconstructed rather than approximated. MedQA-USMLE is the full 1,273-question
