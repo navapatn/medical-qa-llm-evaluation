@@ -29,7 +29,7 @@ code repository and are deposited separately:
 >
 > That is the concept DOI and always resolves to the latest version.
 >
-> **Note:** the archive currently holds the ten OpenRouter models. The raw
+> **Note:** the archive currently holds the twelve OpenRouter models. The raw
 > MedGemma generations and judge verdicts are not yet deposited; this
 > repository carries their run manifests, the derived twelve-model results,
 > and all the code needed to reproduce them.
