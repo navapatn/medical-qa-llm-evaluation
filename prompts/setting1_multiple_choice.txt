@@ -1,7 +1,5 @@
-# Setting 1: multiple-choice baseline, zero-shot (prompt for the planned re-run)
-# Exact message sequence for the zero-shot re-run of Setting 1: the five-shot template
-# (setting1_multiple_choice.txt) with the five exemplar turns removed. Outputs from this
-# re-run are not yet deposited; the deposited Setting 1 outputs used setting1_multiple_choice.txt.
+# Setting 1: multiple-choice baseline, zero-shot
+
 
 [SYSTEM]
 As a healthcare professional, provide an expert response to each question. Exactly one answer option is the most correct.
