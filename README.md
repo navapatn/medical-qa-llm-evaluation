@@ -25,7 +25,7 @@ and metrics, the derived tables, and the figures as they appear in the paper.
 The **model generations and per-question judge verdicts** are too large for a
 code repository and are deposited separately:
 
-> **Archive:** https://doi.org/10.5281/zenodo.21736709 (CC-BY-4.0)
+> **Archive:** https://doi.org/10.5281/zenodo.21736709 (CC-BY-4.0) (old version; outdated)
 >
 > That is the concept DOI and always resolves to the latest version.
 >
